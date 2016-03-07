@@ -35,8 +35,8 @@
                                     <a href="mailto:">info@pearlhealth.org</a>
                                 </div>
                             </div>
-                            <img src="images/foot_address_section_leftimg.png" class="foot_address_section_leftimg">
-                            <img src="images/foot_address_section_rightimg.png" class="foot_address_section_rightimg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/foot_address_section_leftimg.png" class="foot_address_section_leftimg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/foot_address_section_rightimg.png" class="foot_address_section_rightimg">
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
             <div class="container foot_main_section">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot_main_section_content">
-                        <a href="javascript:void(0);"> <img src="images/footer_logo.png"></a>
+                        <a href="javascript:void(0);"> <img src="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png"></a>
                         <div class="hour_block">
                             <div class="hour_block_left">
                                 Hours :
@@ -78,8 +78,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot_main_section_content">
                         <div class="foot_main_section_content_last">
                             <div class="foot_social_icon_div">
-                                <a href="javascript:void(0);"><img src="images/fb_icon.png"></a>
-                                <a href="javascript:void(0);"><img src="images/twitter_icon.png"></a>
+                                <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
+                                <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
                                 <a href="javascript:void(0);" class="update_text">Keep Updated</a>
                             </div>
                             <div class="input_address_div">

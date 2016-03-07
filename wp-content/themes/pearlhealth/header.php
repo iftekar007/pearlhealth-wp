@@ -20,8 +20,8 @@
                     </div>
                     <div class="col-lg-3 col-md-3  col-sm-4 col-xs-12 header_top_block_right">
                         <div class="icon_content">
-                            <a href="javascript:void(0);"><img src="images/fb_icon.png"></a>
-                            <a href="javascript:void(0);"><img src="images/twitter_icon.png"></a>
+                            <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
+                            <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
                             <a href="javascript:void(0);" class="book_appobtn"><strong>+</strong>Book appointment</a>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
             <div class="container pearl_menu_container">
                 <div class="row">
                     <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 top_menu_block_left">
-                        <a href="javascript:void(0);"><img src="images/pearl_logo.png"> </a>
+                        <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/pearl_logo.png"> </a>
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 top_menu_block_right">
                         <nav class="navbar ">
