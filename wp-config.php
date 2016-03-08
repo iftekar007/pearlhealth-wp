@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+error_reporting(E_ALL);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'spectrum_pearlwp');

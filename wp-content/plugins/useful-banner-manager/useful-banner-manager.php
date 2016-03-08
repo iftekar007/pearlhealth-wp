@@ -59,6 +59,14 @@ function ubm_get_banners(){
     return $banners;
 }
 
+function ubm_get_banners_byorder(){
+    global $ubm_banners;
+
+    $banners = $ubm_banners->get_banners_withorder();
+
+    return $banners;
+}
+
 function ubm_get_banner( $id ) {
     global $ubm_banners;
 

@@ -184,6 +184,13 @@ WHERE id=".$id;
 
         return $banners;
     }
+    public function get_banners_withorder() {
+        global $wpdb;
+
+        $banners = $wpdb->get_results( "SELECT * FROM " . $wpdb->ubm_banners . " ORDER BY banner_order;" );
+
+        return $banners;
+    }
 
     public function display_banner( $banner ) {
         global $ubm_plugin_url;

@@ -241,8 +241,10 @@ $upload_dir = wp_upload_dir();
                               </object>
                           <?php
                           } else {
+
+                              $banner->banner_height=212;
                               ?>
-                              <img src="<?php echo( $upload_dir['baseurl'] ); ?>/useful_banner_manager_banners/<?php echo( $banner->id . '-' . $banner->banner_name ); ?>.<?php echo( $banner->banner_type ); ?>"<?php if ( ! empty( $banner->banner_width ) ) { echo( ' width="' . $banner->banner_width . '"' ); } if ( ! empty( $banner->banner_height ) ) { echo( ' height="' . $banner->banner_height . '"' ); } ?> alt="<?php echo( $banner->banner_alt ); ?>" />
+                              <img src="<?php echo( $upload_dir['baseurl'] ); ?>/useful_banner_manager_banners/<?php echo( $banner->id . '-' . $banner->banner_name ); ?>.<?php echo( $banner->banner_type ); ?>"<?php if ( ! empty( $banner->banner_width ) ) { echo( ' width=640px' ); } if ( ! empty( $banner->banner_height ) ) { echo( ' height="' . $banner->banner_height . '"' ); } ?> alt="<?php echo( $banner->banner_alt ); ?>" />
                           <?php
                           }
                           ?>
@@ -250,10 +252,12 @@ $upload_dir = wp_upload_dir();
                           <input type="hidden" name="<?php echo( $ubm_plugin_prefix ); ?>banner_name" value="<?php echo( $banner->banner_name ); ?>" />
                           <input type="hidden" name="<?php echo( $ubm_plugin_prefix ); ?>banner_type" value="<?php echo( $banner->banner_type ); ?>" />
                           <input type="file" name="<?php echo( $ubm_plugin_prefix ); ?>banner_file" id="<?php echo( $ubm_plugin_prefix ); ?>banner_file" /> <small><?php _e( 'The banner type can be jpg, jpeg, gif, png or swf.', 'useful-banner-manager' ); ?></small>
+                          <br/>
+                          <span>Please upload an image of resolution 1920 X 634 for best results </span>
                       </td>
                   </tr>
                   <tr>
-                      <td width="25%" valign="middle"><strong><?php _e( 'Banner Titlehh', 'useful-banner-manager' ); ?></strong></td>
+                      <td width="25%" valign="middle"><strong><?php _e( 'Banner Title', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_title" id="<?php echo( $ubm_plugin_prefix ); ?>banner_title" style="width: 300px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $banner_title . '"' ); } else { echo( 'value="' . $banner->banner_title . '"' ); } ?> /> <?php _e( '(required)', 'useful-banner-manager' ); ?>
                       </td>
@@ -278,7 +282,7 @@ $upload_dir = wp_upload_dir();
 
 
 
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Image Alt', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_alt" id="<?php echo( $ubm_plugin_prefix ); ?>banner_alt" style="width: 300px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $banner_alt . '"' ); } else { echo( 'value="' . $banner->banner_alt . '"' ); } ?> /> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?></small>
@@ -290,7 +294,7 @@ $upload_dir = wp_upload_dir();
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_link" id="<?php echo( $ubm_plugin_prefix ); ?>banner_link" style="width: 300px" <?php if ( ! empty ( $errors ) ) { echo( 'value="' . $banner_link . '"' ); } else { echo( 'value="' . $banner->banner_link . '"' ); } ?> /> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?> <?php echo( sprintf( __( '(You can add link to swf file if you use %s)', 'useful-banner-manager' ), '<a href="http://rubensargsyan.com/wordpress-plugin-ubm-premium/" target="_blank">"UBM Premium"</a>' ) ); ?></small>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Link Target', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <select id="<?php echo( $ubm_plugin_prefix ); ?>link_target" name="<?php echo( $ubm_plugin_prefix ); ?>link_target" style="width: 80px">
@@ -301,7 +305,7 @@ $upload_dir = wp_upload_dir();
                           </select> <?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?> <small><?php echo( sprintf( __( '(You can add link target to swf file if you use %s)', 'useful-banner-manager' ), '<a href="http://rubensargsyan.com/wordpress-plugin-ubm-premium/" target="_blank">"UBM Premium"</a>' ) ); ?></small>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Link Rel', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <select id="<?php echo( $ubm_plugin_prefix ); ?>link_rel" name="<?php echo( $ubm_plugin_prefix ); ?>link_rel" style="width: 80px">
@@ -310,7 +314,7 @@ $upload_dir = wp_upload_dir();
                           </select> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?></small>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Banner Sizes', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <label><?php _e( 'Auto:', 'useful-banner-manager' ); ?> <input type="checkbox" name="<?php echo($ubm_plugin_prefix); ?>auto_sizes" onclick="if(jQuery(this).is(':checked')){ jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_width').attr('disabled',true); jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_height').attr('disabled',true); }else{ jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_width').removeAttr('disabled'); jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_height').removeAttr('disabled'); }" <?php if ( ! empty( $errors ) && isset( $_POST[ $ubm_plugin_prefix . 'auto_sizes' ] ) ) { echo( 'checked="checked"' ); } ?> /></label> <small><?php _e( 'Check this to set the original sizes of the banner, not for swf files.', 'useful-banner-manager' ); ?></small>
@@ -326,7 +330,7 @@ $upload_dir = wp_upload_dir();
                           </table>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Active Until', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>active_until" id="<?php echo( $ubm_plugin_prefix ); ?>active_until" class="datepicker" style="width: 100px" <?php if ( ! empty( $errors ) ) { if( in_array( 'active_until', $errors ) ) { echo( 'value="' . esc_attr( $_POST[ $ubm_plugin_prefix . 'active_until' ] ) . '"'); } elseif ( $active_until != -1 ) { echo( 'value="' . $active_until . '"' ); } } elseif ( $banner->active_until != -1 ) { echo( 'value="' . $banner->active_until . '"' ); } ?> /> <small><?php _e( 'Leave empty if there is no date.', 'useful-banner-manager' ); ?></small>
@@ -338,13 +342,13 @@ $upload_dir = wp_upload_dir();
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_order" id="<?php echo( $ubm_plugin_prefix ); ?>banner_order" style="width: 50px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . esc_attr( $_POST[ $ubm_plugin_prefix . 'banner_order' ] ) . '"' ); } else { echo( 'value="' . $banner->banner_order . '"' ); } ?> /> <small><?php _e( 'Set the number depends on which the banner will be shown on more top places.', 'useful-banner-manager' ); ?></small>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Wrapper ID', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>wrapper_id" id="<?php echo( $ubm_plugin_prefix ); ?>wrapper_id" style="width: 100px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $wrapper_id . '"' ); } else { echo( 'value="' . $banner->wrapper_id . '"' ); } ?> /> <small><?php _e( 'ID of the tag "div" wrapping the banner.', 'useful-banner-manager' ); ?></small>
                       </td>
                   </tr>
-                  <tr>
+                  <tr style="display:none ">
                       <td width="25%" valign="middle"><strong><?php _e( 'Wrapper Class', 'useful-banner-manager' ); ?></strong></td>
                       <td width="75%">
                           <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>wrapper_class" id="<?php echo( $ubm_plugin_prefix ); ?>wrapper_class" style="width: 100px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $wrapper_class . '"' ); } else { echo( 'value="' . $banner->wrapper_class . '"' ); } ?> /> <small><?php _e( 'Class or classes of the tag "div" wrapping the banner.', 'useful-banner-manager' ); ?></small>
@@ -566,6 +570,8 @@ $upload_dir = wp_upload_dir();
                   <td width="25%" valign="middle"><strong><?php _e( 'Banner File', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <input type="file" name="<?php echo( $ubm_plugin_prefix ); ?>banner_file" id="<?php echo( $ubm_plugin_prefix ); ?>banner_file" /> <?php _e( '(required)', 'useful-banner-manager' ); ?> <small><?php _e( 'The banner type can be jpg, jpeg, gif, png or swf.', 'useful-banner-manager' ); ?></small>
+                      <br/>
+                      <span>Please upload an image of resolution 1920 X 634 for best results </span>
                   </td>
               </tr>
               <tr>
@@ -594,7 +600,7 @@ $upload_dir = wp_upload_dir();
 
 
 
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Image Alt', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_alt" id="<?php echo( $ubm_plugin_prefix ); ?>banner_alt" style="width: 300px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $banner_alt . '"' ); } ?> /> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?></small>
@@ -606,7 +612,7 @@ $upload_dir = wp_upload_dir();
                       <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_link" id="<?php echo( $ubm_plugin_prefix ); ?>banner_link" style="width: 300px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . $banner_link . '"'); } ?> /> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?> <?php echo( sprintf( __( '(You can add link to swf file if you use %s)', 'useful-banner-manager' ), '<a href="http://rubensargsyan.com/wordpress-plugin-ubm-premium/" target="_blank">"UBM Premium"</a>' ) ); ?></small>
                   </td>
               </tr>
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Link Target', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <select id="<?php echo( $ubm_plugin_prefix ); ?>link_target" name="<?php echo( $ubm_plugin_prefix ); ?>link_target" style="width: 80px">
@@ -617,7 +623,7 @@ $upload_dir = wp_upload_dir();
                       </select> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?> <?php echo( sprintf( __( '(You can add link target to swf file if you use %s)', 'useful-banner-manager' ), '<a href="http://rubensargsyan.com/wordpress-plugin-ubm-premium/" target="_blank">"UBM Premium"</a>' ) ); ?></small>
                   </td>
               </tr>
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Link Rel', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <select id="<?php echo( $ubm_plugin_prefix ); ?>link_rel" name="<?php echo( $ubm_plugin_prefix ); ?>link_rel" style="width: 80px">
@@ -626,7 +632,7 @@ $upload_dir = wp_upload_dir();
                       </select> <small><?php _e( 'Not for swf files.', 'useful-banner-manager' ); ?></small>
                   </td>
               </tr>
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Banner Sizes', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <label><?php _e( 'Auto:', 'useful-banner-manager' ); ?> <input type="checkbox" name="<?php echo($ubm_plugin_prefix); ?>auto_sizes" onclick="if(jQuery(this).is(':checked')){ jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_width').attr('disabled',true); jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_height').attr('disabled',true); }else{ jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_width').removeAttr('disabled'); jQuery('#<?php echo( $ubm_plugin_prefix ); ?>banner_height').removeAttr('disabled'); }" <?php if ( ! empty( $errors ) && isset( $_POST[ $ubm_plugin_prefix . 'auto_sizes' ] ) ) { echo( 'checked="checked"' ); } ?> /></label> <small><?php _e( 'Check this to set the original sizes of the banner, not for swf files.', 'useful-banner-manager' ); ?></small>
@@ -641,7 +647,7 @@ $upload_dir = wp_upload_dir();
                           </tr>
                       </table>
                   </td>
-              </tr>
+              </tr style="display:none ">
               <tr>
                   <td width="25%" valign="middle"><strong><?php _e( 'Active Until', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
@@ -654,13 +660,13 @@ $upload_dir = wp_upload_dir();
                       <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>banner_order" id="<?php echo( $ubm_plugin_prefix ); ?>banner_order" style="width: 50px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . esc_attr( $_POST[ $ubm_plugin_prefix . 'banner_order' ] ) . '"' ); } else { echo( 'value="0"' ); } ?> /> <small><?php _e( 'Set the number depends on which the banner will be shown on more top places.', 'useful-banner-manager' ); ?></small>
                   </td>
               </tr>
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Wrapper ID', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>wrapper_id" id="<?php echo( $ubm_plugin_prefix ); ?>wrapper_id" style="width: 100px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . esc_attr( $_POST[ $ubm_plugin_prefix . 'wrapper_id' ] ) . '"' ); } else { echo( 'value=""' ); } ?> /> <small><?php _e( 'ID of the tag "div" wrapping the banner.', 'useful-banner-manager' ); ?></small>
                   </td>
               </tr>
-              <tr>
+              <tr style="display:none ">
                   <td width="25%" valign="middle"><strong><?php _e( 'Wrapper Class', 'useful-banner-manager' ); ?></strong></td>
                   <td width="75%">
                       <input type="text" name="<?php echo( $ubm_plugin_prefix ); ?>wrapper_class" id="<?php echo( $ubm_plugin_prefix ); ?>wrapper_class" style="width: 100px" <?php if ( ! empty( $errors ) ) { echo( 'value="' . esc_attr( $_POST[ $ubm_plugin_prefix . 'wrapper_class' ] ) . '"' ); } else { echo( 'value=""' ); } ?> /> <small><?php _e( 'Class or classes of the tag "div" wrapping the banner.', 'useful-banner-manager' ); ?></small>

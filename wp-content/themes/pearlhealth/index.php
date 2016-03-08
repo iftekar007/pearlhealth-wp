@@ -44,10 +44,10 @@
     //print_r(get_the_ID());
     if (@get_the_ID()==1 || get_the_ID()==6){
 
-        if ( function_exists( 'ubm_get_banners' ) ) {
+        if ( function_exists( 'ubm_get_banners_byorder' ) ) {
             $upload_dir = wp_upload_dir();
 
-            $banners=(ubm_get_banners());
+            $banners=(ubm_get_banners_byorder());
 
             ?>
 
@@ -69,12 +69,10 @@
                  <div class="item <?php if($i==0) echo "active"; ?> "> <img src="<?php echo $upload_dir['baseurl'] . '/useful_banner_manager_banners/' . $val->id . '-' . $val->banner_name . '.' . $val->banner_type ; ?>  " style="width:100%" alt="First slide">
                     <div class="container-fluid banner_text_area">
                         <div class="banner_text_block1">
-                            <h1>Our message
-                                is simple:</h1>
-                            <h2>You Are Not Alone and There is Help</h2>
-                            <p>We're committed to unparalleled treatment that that covers the worth we all have as human being.
-                                It's our mission to unlock the true potential to improve your way of life. </p>
-                            <a href="javascript:void(0);" class="bannar_btn">Learn More</a>
+                            <h1><?php echo $val->banner_title ; ?></h1>
+                            <h2><?php echo $val->banner_title2 ; ?></h2>
+                            <p><?php echo $val->banner_desc ; ?> </p>
+                            <a href="<?php echo $val->banner_link ; ?>" class="bannar_btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -178,5 +176,8 @@
 
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-    <!--<script src="ng-js/ui-bootstrap-tpls-0.14.3.min.js"></script>-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+
+
+
 
