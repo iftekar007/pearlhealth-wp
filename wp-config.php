@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'pearlhealth');
+define('DB_NAME', 'spectrum_pearlwp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'spectrum_pearlwp');
 
 /** MySQL database password */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', 'P@ss12345');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
