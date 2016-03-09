@@ -51,14 +51,32 @@
                                 </div>
                                 <div class="collapse navbar-collapse" id="myNavbar">
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Home</a></li>
+                                        <!--<li class="active"><a href="#">Home</a></li>
                                         <li><a href="#">OUR SERVICES</a></li>
                                         <li><a href="#">PLANNING YOUR VISIT</a></li>
                                         <li><a href="#">COMMUNITY EVENTS</a></li>
                                         <li><a href="#">ABOUT PEARL HEALTH</a></li>
                                         <li><a href="#">AFFILIATES</a></li>
                                         <li><a href="#">NEWS</a></li>
-                                        <li><a href="#">PATIENT PORTAL</a></li>
+                                        <li><a href="#">PATIENT PORTAL</a></li>-->
+
+                                        <?php
+                                        $args = array(
+                                            'sort_column' => 'post_date',
+                                            'sort_order' => 'asc',
+                                            'child_of' => '0',
+                                            'post_type' => 'page',
+                                            'post_status' => 'publish'
+
+                                        );
+                                        $pages = get_pages($args);
+
+                                        if ($pages) {
+                                            foreach ($pages as $page) :
+                                                echo ' <li class="ssd"><a href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a></li>';
+                                            endforeach;
+                                        }
+                                        ?>
                                     </ul>
 
                                 </div>
@@ -70,3 +88,6 @@
         </div>
     </div>
 </div>
+
+
+
