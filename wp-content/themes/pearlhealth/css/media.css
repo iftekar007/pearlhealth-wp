@@ -4,6 +4,7 @@
 
 	.upcoming_event_wrapper .upcoming_event_wrapper_banner .upcoming_events_banner_cut2{width: 	49%; left: 51%;}
 	.upcoming_event_banner_bottom{position: absolute; bottom: -6px; left: 51%; background:#989999; width: 49%; height: 6px; border-left: 10px solid #fff; border-top: 6px solid transparent;}
+	.supportliving_body_wrapper .supportliving_body_wrapper_section h1{font-size:27px;}
 }
 @media screen and (max-width:1830px) {
 	.upcoming_event_banner_bottom{left: 55%;}
@@ -186,14 +187,14 @@
 	.home_specialist_block .home_specialist_block_left{padding: 0 15px;}
 	.home_specialist_block .home_specialist_block_right{padding: 0 15px;}
 
-	.services_wrapper{padding: 0 15px;  padding-top: 103px; margin-bottom: -113px;}
+	
 	.services_wrapper .services_body_block{width: 90%; margin: 98px auto; padding: 0 15px;}
 	.services_wrapper .services_body_block .services_body_block_content{padding: 0 15px 0 0;}
 
 	.planning_block_content_imgblock{height: 86px;}
 	.visit_wrapper .visit_body_block_top .visit_body_block_top_section{padding: 0 15px;}
 	.visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content{padding: 0 15px;}
-	.visit_wrapper .visit_body_block_top{margin-top: -193px; padding-top: 230px; padding-bottom: 90px;}
+	
 	.visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block{width: 100%;}
 	.planning_block_content1{height: 283px;}
 
@@ -202,7 +203,7 @@
 	.upcoming_event_banner_bottom {
 		left: 82%;
 	}
-	.upcoming_event_wrapper .upcoming_event_wrapper_banner{margin-top: -193px;}
+	
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content{background: #d3d3d3; padding: 40px; text-align: center;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_imgblock{width: 100%;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_block_left{width: 100%; float: none; padding: 0px;}
@@ -766,14 +767,6 @@
 	.gellary_body_wrapper .gellary_video_text_block{margin: 0px auto; width: 600px; text-align: center; background: url("../images/gellary_bodybg_img2.png") no-repeat top center; padding: 110px 0 0 0;}
 }
 
-@media screen and (max-width:1199px) {
-	.banner_block{top: -193px;}
-
-	.banner_text_block1{position: inherit; width: 100%; margin-top: 30px;}
-	.banner_text_block2{position: inherit; width: 100%; margin-top: 30px;}
-	.banner_text_block3{position: inherit; width: 100%; margin-top: 30px;}
-	.banner_text_block4{position: inherit; width: 100%; margin-top: 30px;}
-}
 
 @media screen and (max-width:1100px) {
 	.banner_block{top: -179px;}
@@ -836,6 +829,88 @@
 	.about_body_wrapper .about_body_wrapper_section{padding: 0px 15px;}
 	.about_body_block{padding: 66px 15px; width: inherit;}
 	.about_body_block .about_body_block_col{padding: 0px 15px;}
+	
+	/*------supportliving-------*/
+
+	.supportliving_body_wrapper{padding: 0 15px;}
+	.supportliving_body_wrapper .supportliving_body_wrapper_section{padding: 0 15px;}
+	.supportliving_body_section1{padding: 0 15px;}
+	.supportliving_body_section1 .supportliving_body_section1_left{padding-left: 15px;}
+	.supportliving_body_section2{padding: 0 15px;}
+	.supportliving_body_section2 .supportliving_body_section2_content{padding: 0 15px;}
+	.supportliving_body_section3{padding: 0 15px;}
+	.supportliving_body_section3 .supportliving_body_section3_content{padding: 0 15px; width: 98%; float: none; margin: 0 auto;}
+
+
+	/*------------neuropsychological---------------*/
+	.neuro_body_wrapper{padding: 0 15px;}
+	.neuro_body_wrapper .neuro_body_wrapper_section{padding: 0 15px;}
+	.neuro_body_section1{padding: 0 15px;}
+	.neuro_body_section1 .neuro_body_section1_left{padding-left: 15px;}
+	.neuro_body_section2{padding: 0 15px;}
+	.neuro_body_section2 .neuro_body_section2_content{padding: 0 15px;}
+	.neuro_body_section3{padding: 0 15px;}
+	.neuro_body_section3 .neuro_body_section3_content{padding: 18px 15px; width: 98%; margin: 0 auto; float: none;}
+
+	/*--------neurofeedbacktherapy--------*/
+	.neurofeed_body_wrapper{padding: 0 15px;}
+	.neurofeed_body_wrapper .neurofeed_body_wrapper_section{padding: 0 15px;}
+	.neurofeed_body_section1{padding: 0 15px;}
+	.neurofeed_body_section1 .neorofeed_body_section1_left{padding-left: 15px;}
+	.neurofeed_body_section1 .neurofeed_body_section1_right{padding-left: 20px;}
+	.neurofeed_body_section2{padding: 0 15px;}
+	.neurofeed_body_section2 .neurofeed_body_section2_content{padding: 0 15px;}
+	.neurofeed_body_section3{padding: 0 15px;}
+	.neurofeed_body_section3_col{padding: 0 15px;}
+	.neurofeed_body_section4{padding: 0 15px;}
+	.neurofeed_body_section4 .neurofeed_body_section4_content{padding: 20px 15px; width: 98%; float: none; margin: 10px auto;}
+
+	/*---------------eatingdisorders-----------------------*/
+	.eatdis_body_wrapper{padding: 0 15px;}
+	.eatdis_body_wrapper .eatdis_body_wrapper_section{padding: 0 15px;}
+	.eatdis_body_section1 .eatdis_body_section1_left{padding-left: 15px;}
+	.eatdis_body_section3{padding: 0 15px;}
+	.eatdis_body_section3 .eatdis_body_section3_content{padding: 20px 15px; width: 98%; margin: 0 auto; float: none;}
+
+	/*---------------cbrs----------------*/
+	.cbrs_body_wrapper{padding: 0 15px;}
+	.cbrs_body_wrapper .cbrs_body_wrapper_section{padding: 0 15px;}
+	.cbrs_body_section1{padding: 0 15px;}
+	.cbrs_body_section1 .cbrs_body_section1_left{padding-left: 15px;}
+	.cbrs_body_section2{padding: 0 15px;}
+	.cbrs_body_section2 .cbrs_body_section2_content{padding: 0 15px;}
+	.cbrs_body_section3{padding: 0 15px;}
+	.cbrs_body_section3 .cbrs_body_section3_content{padding: 20px 15px; width: 98%; float: none; display: block; margin: 0 auto;}
+
+	/*---------------casemanagement---------------------*/
+	.case_body_wrapper{padding: 0 15px;}
+	.case_body_wrapper .case_body_wrapper_section{padding: 0 15px;}
+	.case_body_section1{padding: 0 15px;}
+	.case_body_section1 .case_body_section1_left{padding-left: 15px;}
+	.case_body_section2{padding: 0 15px;}
+	.case_body_section2 .case_body_section2_content{padding: 0 15px;}
+	.case_body_section3{padding: 0 15px;}
+	.case_body_section3 .case_body_section3_content{padding: 20px 15px; width: 98%; float: none; margin: 0 auto;}
+
+	/*---------------subtanceabuse---------------------*/
+	.subtan_body_wrapper{padding: 0 15px;}
+	.subtan_body_wrapper .subtan_body_wrapper_section{padding: 0 15px;}
+	.subtan_body_section1{padding: 0 15px;}
+	.subtan_body_section1 .subtan_body_section1_left{padding-left: 15px;}
+	.subtan_body_section3{padding: 0 15px;}
+	.subtan_body_section3 .subtan_body_section3_content{padding: 20px 15px; width: 98%; margin: 0 auto;}
+
+	/*-----------------------charity-------------------------*/
+	.charity_body_wrapper{padding: 0 15px;}
+	.charity_body_wrapper .charity_body_wrapper_section{padding: 0 15px;}
+	.charity_body_main{padding: 0 15px;}
+	.charity_body_main_col{padding: 0 15px;}
+	
+	/*-----------------------professional------------------------------*/
+	.professional_body_wrapper{padding: 0 15px;}
+	.professional_body_wrapper .professional_body_wrapper_section{padding: 0 15px;}
+	.professional_body_main{padding: 0 15px;}
+	.professional_body_main_col{padding: 0 15px;}
 
 
 }
@@ -860,6 +935,7 @@
 	.career_body_gellary .career_body_gellary_section{text-align: center;}
 	.career_gellary_block1 p{background: none; padding: 30px 0;}
 	.career_gellary_block2 p{background:none; padding: 30px 0;}
+	.career_body_gellary .career_body_gellary_section p{padding:25px 0;}
 
 	.career_form_block .career_form_block_left ul li{text-align: left;}
 	.career_form_block .career_form_block_right .career_form_section label{text-align: left; display: block;}
@@ -882,11 +958,83 @@
 
 	.about_body_block{background: #f5f5f5; border: 3px solid #d9d9d9; padding: 22px 15px;}
 	.about_body_block_content{margin: 0px auto;}
+	
+	/*------supportliving-------*/
+
+	.supportliving_body_section1 .supportliving_body_section1_left{padding-left: 15px; float: none; display: block; width: 80%; margin: 15px auto;}
+
+	.supportliving_body_section1 .supportliving_body_section1_right{padding: 0 15px; float: none; width: 100%; text-align: center;}
+	.supportliving_body_section1 .supportliving_body_section1_right .counselling_body_line{display: block; margin: 10px auto;}
+	.supportliving_body_section1 .supportliving_body_section1_right li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top 1px; padding: 34px 0 0 0;}
+
+	.supportliving_body_section2{text-align: center; padding: 0 15px;}
+	.supportliving_body_section2 .supportliving_body_section2_content{padding: 0 15px;}
+	.supportliving_body_section3{padding: 0 15px;}
+	.supportliving_body_section3 .supportliving_body_section3_content{background: #9aca42; text-align: center; padding: 20px 15px;}
+	.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block{margin: 0px auto; display: block; width: 100%;}
+	.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+	/*------------neuropsychological---------------*/
+	.neuro_body_section3 .neuro_body_section3_content{background: #d2d2d2;}
+	.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block{float: none; margin: 0 auto; text-align: center; width: 100%;}
+	.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+
+	/*---------------eatingdisorders-----------------------*/
+	.eatdis_body_section3 .eatdis_body_section3_content{text-align: center; background: #d2d2d2; text-align: center;}
+	.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block{width: 100%; margin: 0 auto; display: block;}
+	.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+	/*---------------cbrs----------------*/
+	.cbrs_body_section3 .cbrs_body_section3_content{background: #9aca42; text-align: center;}
+	.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block{float: none; width: 100%;}
+	.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+	/*---------------casemanagement-----------------------*/
+	.case_body_section3 .case_body_section3_content{text-align: center; background: #9aca42; text-align: center;}
+	.case_body_section3 .case_body_section3_content .supportliving_book_block{width: 100%; margin: 0 auto; display: block;}
+	.case_body_section3 .case_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+	/*---------------subtanceabuse---------------------*/
+	.subtan_body_section1 .subtan_body_section1_left{float: none; width: 80%; margin: 0 auto;}
+	.subtan_body_section1 .subtan_body_section1_left img{display: block; margin: 0 auto;}
+	.subtan_body_section1_right_col{width: 100%; float: none; text-align: center;}
+	.subtan_body_section1 .subtan_body_section1_right{border-left: none; border-top: 2px solid #9aca42; margin-top: 15px; padding-top: 15px; padding-left: 0px;}
+	.subtan_body_section1 .subtan_body_section1_right li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
+	.subtan_body_section3 .subtan_body_section3_content{background: #9aca42; text-align: center; float: none;}
+	.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block{float: none; width: 100%; margin: 0 auto;}
+	.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+	/*-----------------------charity-------------------------*/
+	.charity_body_sec1_left{height: 300px;}
+	.charity_body_sec1_right{height: 300px;}
+	.charity_body_sec2_left{height: 300px;}
+	.charity_body_sec2_right{height: 300px;}
+	.charity_body_sec3_top{height: 300px;}
+	.charity_body_sec3_bottom{background: #fff;}
+	.charity_freemedimg{display: block; margin: 10px auto; float: none;}
+	.charity_body_sec3_bottom_text{display: block; width: 100%; float: none;}
+	
+	/*-----------------------professional------------------------------*/
+	.professional_body_sec1_left{height: 280px;}
+	.professional_body_sec1_right{height: 280px;}
+	.professional_body_sec2_top{height: 220px;}
+	.professional_body_sec2_top2{height: 220px;}
+	.professional_body_sec2_top2_left{padding: 35px 0;}
+	.professional_body_sec2_top2_left img{width: 90%; margin: 0 auto; display: block;}
+	.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img{padding:64px 0;}
+	.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img img{width: 90%; margin: 0 auto; display: block;}
+	.professional_body_sec2_top2_right h2{padding-top: 70px; padding-right: 10px;}
+	.professional_body_sec2_block3{height: 220px;}
+	.professional_body_sec2_block4{height: 220px;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_left{padding: 0 18px;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_left img{width: 43%;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_left h3{margin-top: 0px;}
 
 }
 @media screen and (max-width:1100px) {
 	.faq_wrapper {
-		margin-top: -179px;
+		margin-top: -184px;
 	}
 
 }
@@ -945,6 +1093,7 @@
 	.career_form_block .career_form_block_right .resume_area{height: 110px; padding-top: 15px;}
 	.career_form_block .career_form_block_right .resume_area span{display: block;}
 	.career_form_block .career_form_block_right .resume_area .select_file{display: block; margin: 10px auto;}
+	.career_body_gellary .career_body_gellary_section .career_gellary_headtext{margin-bottom:10px;}
 
 
 	/*---------gellary---------*/
@@ -985,6 +1134,127 @@
 	.about_body_block_content_bottom .foot_address_block1_content{background: url("../images/clinic_icon.png") no-repeat top center; padding:70px 0 0 0; height: auto; display: block; float: none;}
 	.about_body_block_content_bottom .foot_address_block2_content{background: url("../images/phone_icon.png") no-repeat top center; padding:70px 0 0 0; height: auto; display: block; margin: 15px 0; float: none;}
 	.about_body_block_content_bottom .foot_address_block3_content{background: url("../images/message_icon.png") no-repeat top center; padding:70px 0 0 0; height: auto; display: block; float: none;}
+	
+	/*---------supportliving-------------*/
+
+	.supportliving_body_wrapper{padding: 0 15px;}
+	.supportliving_body_wrapper .supportliving_body_wrapper_section{margin: 10px auto; text-align: center; padding: 0 15px;}
+	.supportliving_body_section1 .supportliving_body_section1_left{width: 100%;}
+	.supportliving_body_wrapper .supportliving_body_wrapper_section h1{ background: url("../images/supportliving_body_icon1.png") no-repeat top center; padding: 50px 0 0 0; line-height: 50px;}
+	.supportliving_body_section1{padding: 0 15px;}
+	.supportliving_body_section1_left_content{background: none; border: 3px solid #9aca42; padding: 15px;}
+	.supportliving_body_section1 .counselling_body_section1_left{width: 100%;}
+	.supportliving_sec1_left_content{float: none; width: 100%; text-align: center; margin: 0px;}
+
+
+	/*------------neuropsychological---------------*/
+
+	.neuro_body_wrapper .neuro_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.neuro_body_wrapper .neuro_body_wrapper_section h1{background: url("../images/neuro_body_icon1.png") no-repeat center top; padding: 60px 0 0 0;}
+	.neuro_body_section1 .neuro_body_section1_left{text-align: center; margin-bottom: 15px;}
+	.neuro_body_section1 .neuro_body_section1_left .counselling_body_line{display: block; margin: 10px auto;}
+	.neuro_body_section1 .neuro_body_section1_left li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top ; padding: 30px 0 0 0;}
+	.neuro_body_section1 .neoro_body_section1_right{text-align: center; border-left: none; border-top: 2px solid #9aca42; padding-left: 15px; padding-top: 20px;}
+	.neuro_body_section2 .neuro_body_section2_content{text-align: center;}
+
+	/*--------neurofeedbacktherapy--------*/
+	.neurofeed_body_wrapper .neurofeed_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.neurofeed_body_wrapper .neurofeed_body_wrapper_section h1{background: url("../images/neurofeed_body_icon1.png") no-repeat center top; padding: 60px 0 0 0;}
+	.neurofeed_body_section1 .neorofeed_body_section1_left{width: 100%; float: none; text-align: center;}
+	.neorofeed_body_section1_left_content{padding: 0px 0 20px 0; border-left: none; border-bottom: 2px solid #9aca42; margin-bottom: 15px;}
+	.neurofeed_body_section1 .neurofeed_body_section1_right{width: 100%; padding: 0 15px; text-align: center; float: none;}
+	.neurofeed_body_section1 .neurofeed_body_section1_right .counselling_body_line{display: block; margin: 10px auto;}
+	.neurofeed_body_section1 .neurofeed_body_section1_right li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
+	.neurofeed_body_section2 .neurofeed_body_section2_content{text-align: center;}
+	.neurofeed_body_section3_col .neurofeed_body_section3_left_content{display: block; margin: 10px auto; display: block; float: none;}
+	.neurofeed_body_section3_col p{display: block; text-align: center;}
+	.neurofeed_body_section4 .neurofeed_body_section4_content{background: #363736; text-align: center;}
+	.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block{width: 100%; margin: 0 auto;}
+	.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+
+
+	/*---------------eatingdisorders-----------------------*/
+	.eatdis_body_wrapper .eatdis_body_wrapper_section{margin: 15px auto; text-align: center;}
+	.eatdis_body_wrapper .eatdis_body_wrapper_section h1{background: url("../images/eatdis_body_icon1.png") no-repeat center top; padding: 50px 0 0 0;}
+	.eatdis_body_section1 .eatdis_body_section1_left{text-align: center;}
+	.eatdis_body_section1 .eatdis_body_section1_left .counselling_body_line{display: block; margin: 10px auto;}
+	.eatdis_body_section1 .eatdis_body_section1_left li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
+	.eatdis_body_section1_right_col{padding: 15px; width: 94%; margin: 0 auto; float: none; text-align: center; }
+	.eatdis_body_section1 .eatdis_body_section1_left{float: none;}
+	.eatdis_body_section1_right{background: #a8bccf; width: 100%;padding: 20px 15px;}
+	.eatdis_body_section1_right p{padding: 0px; width: 100%;}
+
+
+
+	/*---------------cbrs----------------*/
+	.cbrs_body_wrapper .cbrs_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.cbrs_body_wrapper .cbrs_body_wrapper_section h1{background: url("../images/cbrs_body_icon1.png") no-repeat center top; padding: 45px 0 0 0; line-height: 36px;}
+	.cbrs_body_wrapper .cbrs_body_wrapper_section h1 span{display: block;}
+	.cbrs_body_section1 .cbrs_body_section1_left{float: none; width: 100%; text-align: center;}
+	.cbrs_body_section1 .cbrs_body_section1_left .counselling_body_line{display: block; margin: 10px auto;}
+	.cbrs_body_section1 .cbrs_body_section1_left li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
+	.cbrs_body_section1_right{background: none; padding: 15px; width: 98%; margin: 0 auto; float: none;}
+	.cbrs_body_section1_right .cbrs_body_section1_right_content{margin:0px auto; text-align: center; width: 100%;}
+	.cbrs_body_section2 .cbrs_body_section2_content{text-align: center; margin-top: 16px;}
+
+	/*---------------casemanagement---------------------*/
+	.case_body_wrapper .case_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.case_body_wrapper .case_body_wrapper_section h1{background: url("../images/case_body_icon1.png") no-repeat center top; padding: 45px 0 0 0; line-height: 36px;}
+	.case_body_section1 .case_body_section1_left{float: none; width: 100%; text-align: center;}
+	.case_body_section1 .case_body_section1_left .counselling_body_line{display: block; margin: 10px auto;}
+	.case_body_section1 .case_body_section1_left li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
+	.case_body_section1_right_col{padding: 0px;}
+	.case_body_section1_right{background: none; padding: 15px; text-align: center; width: 98%; margin: 0 auto;}
+	.case_body_section1_right .case_body_section1_right_content{float: none; width: 100%;}
+	.case_body_section2 .case_body_section2_content{text-align: center;}
+
+	/*---------------subtanceabuse---------------------*/
+	.subtan_body_wrapper .subtan_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.subtan_body_wrapper .subtan_body_wrapper_section h1{background: url("../images/subtan_body_icon1.png") no-repeat center top; padding: 45px 0 0 0; line-height: 36px;}
+
+	/*-----------------------charity-------------------------*/
+	.charity_body_wrapper .charity_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.charity_body_wrapper .charity_body_wrapper_section h1{background: url("../images/subtan_body_icon1.png") no-repeat center top; padding: 45px 0 0 0; line-height: 36px;}
+	.charity_body_img1{margin-top: -18px;}
+	.charity_body_sec1_left{float: none; height: auto; width: 100%; padding: 30px 0;}
+	.charity_body_sec1_right{float: none; width: 100%; height: auto;}
+	.charity_body_sec2_left{float: none; height: auto; width: 100%;}
+	.charity_body_sec2_right{width: 100%; float: none; height: auto; padding: 30px 0;}
+	.charity_body_sec2_middle{height: auto;}
+	.charity_body_sec2_middle_img1{float: none; width: 100%; display: block; height: auto;}
+	.charity_body_sec2_middle_img2{float: none; width: 100%; display: block; height: auto;}
+	.charity_body_sec2_bottom{height: auto;}
+	.charity_body_sec2_bottom_left{width: 100%; float: none; height: auto; padding: 30px;}
+	.charity_body_sec2_bottom_right{width: 100%; float: none; height: auto; padding: 30px; text-align: center;}
+	.charity_body_sec3_top{height: auto;}
+	.charity_body_img6{float: none; width: 100%;}
+	.charity_body_sec3_top_right{float: none; width: 100%; padding: 30px;}
+	
+	/*-----------------------professional------------------------------*/
+	.professional_body_wrapper .professional_body_wrapper_section{margin: 10px auto; text-align: center;}
+	.professional_body_wrapper .professional_body_wrapper_section h1{background: url("../images/professional_body_icon1.png") no-repeat center top; padding: 52px 0 0 0; line-height: 40px;}
+	.professional_body_sec1_left{float: none; width: 100%; height: auto;}
+	.professional_body_sec1_right{width: 100%; float: none; height: auto;}
+	.professional_body_sec1_right img{margin: 5% auto;}
+	.professional_body_sec2_left{float: none; width: 100%; height: auto;}
+	.professional_body_sec2_left img{width: 100%; height: auto;}
+	.professional_body_sec2_right{float: none; height: auto; width: 100%;}
+	.professional_body_sec2_right a{display: block;}
+	.professional_body_sec2_right img{height: auto;}
+	.professional_body_sec2_top{height: auto;}
+	.professional_body_sec2_top2{height: auto;}
+	.professional_body_sec2_top2_left{float: none; width: 100%; height: auto;}
+	.professional_body_sec2_top2_left img{width: auto;}
+	.professional_body_sec2_top2_right{float: none; width: 100%; height: auto; padding-bottom: 40px;}
+	.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img{float: none; width: 100%; height: auto; padding-bottom: 20px;}
+	.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img img{width: auto;}
+	.professional_body_sec2_top2_right h2{padding: 10px 0; width: 100%; float: none; text-align: center;}
+	.professional_body_sec2_block3{height: auto;}
+	.professional_body_sec2_block3 .professional_body_sec2_block3_left{float: none; width: 100%; height: auto;}
+	.professional_body_sec2_block3 .professional_body_sec2_block3_right{float: none; width: 100%; height: auto;}
+	.professional_body_sec2_block4{height: auto;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_left{float: none; width: 100%; height: auto; padding-bottom: 15px;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_right{float: none; width: 100%; height: auto;}
 
 }
 
@@ -1035,24 +1305,56 @@
 	.gellary_body_video_block .gellary_body_video_content iframe{width: 100%; height: 100%;}
 
 
-}
-
-@media screen and (max-width:500px) {
-
 .staff_detail_popup_left img{width: 75%;}
 
 	/*-----------news----------*/
 
 	.news_body_gellary_block .news_body_gellary_block_bottom .gellary_block_edit{display: block; text-align: center; width: 100%;}
 	.news_body_gellary_block .news_body_gellary_block_bottom .gellary_date{float: none; display: block; margin: 10px auto; width: 100%;}
+	
+	/*-------------neuropsychological-------------------*/
+	.neuro_body_wrapper .neuro_body_wrapper_section h1{font-size: 22px; line-height: 29px;}
+
+	/*-----------------------charity-------------------------*/
+	.charity_body_sec1_left img{width: 70%;}
+	.charity_body_sec2_right img{width: 70%;}
+	.charity_body_sec2_bottom_left img{width: 70%;}
+	
+	/*-----------------------professional------------------------------*/
+	.professional_body_sec1_right img{width: 64%;}
+	.professional_body_sec2_top2_left img{width: 70%;}
+	.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img img{width: 70%;}
+	.professional_body_sec2_block4 .professional_body_sec2_block4_left img{width: 60%;}
 
 }
 
+@media screen and (max-width:400px) {
+	/*-------------neuropsychological-------------------*/
+	.neuro_body_wrapper .neuro_body_wrapper_section h1{font-size: 18px; line-height: 24px;}
 
-@media screen and (max-width:1199px) {
+	/*--------neurofeedbacktherapy--------*/
+	.neurofeed_body_wrapper .neurofeed_body_wrapper_section h1{font-size: 26px; line-height: 34px;}
+
+	/*-----------------------charity-------------------------*/
+	.charity_body_img1{margin-top: -12px;}
+	
+	/*-----------------------professional------------------------------*/
+	.professional_body_wrapper .professional_body_wrapper_section h1{font-size: 29px;}
+}
+
+
+/*-------------------------------menu-media-------------------------------------------------*/
+
+
+@media screen and (max-width:1340px) {
 
 	.top_menu_block{padding: 0px;}
-	.top_menu_block .top_menu_block_right .navbar .container-fluid .navbar-collapse .navbar-nav{margin-top: 10px;}
+	.top_menu_block_left{float: none; width: 100%;}
+	.top_menu_block_left img{display: block; margin: 0 auto;}
+	.top_menu_block .top_menu_block_right{float: none; width: 100%;}
+
+	.top_menu_block .top_menu_block_right .navbar-toggle{margin: 7px 15px 0 0px;}
+	.top_menu_block .top_menu_block_right .navbar .container-fluid .navbar-collapse .navbar-nav{margin:0 auto; margin-top: 10px; width: 100%;}
 
 
 	.top_menu_block .top_menu_block_right .navbar .container-fluid .navbar-collapse {
@@ -1060,7 +1362,7 @@
 	}
 
 
-	.menu_text{display: inline-block;}
+	.menu_text{display: inline-block;padding-left: 15px;}
 
 
 	.top_menu_block .top_menu_block_right .navbar-nav {
@@ -1088,14 +1390,14 @@
 	}
 
 	.top_menu_block .top_menu_block_right .navbar { background: #e0dfdf;
-		float: none;
+		float: none; margin-bottom: 15px;
 	}
 
 	.top_menu_block .top_menu_block_right .navbar-toggle {
 		display: block;
 		background: #666;
-		margin-right: 0px;
-		margin-top: 7px;
+
+
 	}
 
 	.navbar-header {
@@ -1125,13 +1427,167 @@
 	.collapse.in {
 		display: block !important;
 	}
+
+/*----------------------------banner--------------------------------*/
+	.banner_block{top:-174px;}	
+	.banner_text_block1{position: inherit; width: 100%; margin-top: 30px;}
+	.banner_text_block2{position: inherit; width: 100%; margin-top: 30px;}
+	.banner_text_block3{position: inherit; width: 100%; margin-top: 30px;}
+	.banner_text_block4{position: inherit; width: 100%; margin-top: 30px;}
+	
+	.visit_wrapper .visit_body_block_top{margin-top:-174px; padding-top:228px;}
+	
+	.services_wrapper{margin-top:-174px; padding-top:152px;}
+	
+	.upcoming_event_wrapper .upcoming_event_wrapper_banner{margin-top: -174px;}
+	
+	.about_wrapper .about_wrapper_banner{margin-top:-174px;}
+	
+	.career_wrapper .career_wrapper_banner{margin-top:-174px;}
+	
+	.case_wrapper .case_wrapper_banner{margin-top:-174px;}
+	
+	.cbrs_wrapper .cbrs_wrapper_banner{margin-top:-174px;}
+	
+	.charity_wrapper .charity_wrapper_banner{margin-top:-174px;}
+	
+	.contact_wrapper .contact_wrapper_banner{margin-top:-174px;}
+	
+	.counselling_wrapper .counselling_wrapper_banner{margin-top:-174px;}
+	
+	.eatdis_wrapper .eatdis_wrapper_banner{margin-top:-174px;}
+	
+	.familymedicine_wrapper .familymedicine_wrapper_banner{margin-top:-174px;}
+	
+	.mission_wrapper .mission_wrapper_banner{margin-top:-174px;}
+	
+	.neurofeed_wrapper .neurofeed_wrapper_banner{margin-top:-174px;}
+	
+	.neuro_wrapper .neuro_wrapper_banner{margin-top:-174px;}
+	
+	.professional_wrapper .professional_wrapper_banner{margin-top:-174px;}
+	
+	.psychiatry_wrapper .psychiatry_wrapper_banner{margin-top:-174px;}
+	
+	.staff_wrapper .staff_wrapper_banner{margin-top:-174px;}
+	
+	.subtan_wrapper .subtan_wrapper_banner{margin-top:-174px;}
+	
+	.supportliving_wrapper .supportliving_wrapper_banner{margin-top:-174px;}
+
+
 }
+@media screen and (max-width:1199px) {
+
+/*----------------------------banner--------------------------------*/
+.banner_block{top:0px;}
+.home_body_section {top:0px;}
+
+.visit_wrapper .visit_body_block_top{margin-top:-184px; padding-top:230px; padding-bottom: 90px;}
+
+.services_wrapper{margin-top:-184px; padding-top:158px;}
+
+.upcoming_event_wrapper .upcoming_event_wrapper_banner{margin-top: 0px; padding-top:22%; background-size:100%; height:auto;}
+
+.about_wrapper .about_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.career_wrapper .career_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.case_wrapper .case_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.cbrs_wrapper .cbrs_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.charity_wrapper .charity_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.contact_wrapper .contact_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.counselling_wrapper .counselling_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.eatdis_wrapper .eatdis_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.familymedicine_wrapper .familymedicine_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.mission_wrapper .mission_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.neurofeed_wrapper .neurofeed_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.neuro_wrapper .neuro_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.professional_wrapper .professional_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.psychiatry_wrapper .psychiatry_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.staff_wrapper .staff_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.subtan_wrapper .subtan_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+.supportliving_wrapper .supportliving_wrapper_banner{margin-top:0px; background-size:100%; height:auto; padding-top:22%;}
+
+}
+
+@media screen and (max-width:500px) {
+
+/*----------------------------banner--------------------------------*/
+.banner_text_area h1{font-size: 32px; line-height: 34px;}
+	.banner_text_area h2{line-height: 36px; font-size:24px; margin-top:15px;}
+	
+	.upcoming_event_wrapper .upcoming_event_wrapper_banner{padding-top:18%;}
+
+	.about_wrapper .about_wrapper_banner{padding-top:18%;}
+	
+	.career_wrapper .career_wrapper_banner{padding-top:18%;}
+	
+	.case_wrapper .case_wrapper_banner{padding-top:18%;}
+	
+	.cbrs_wrapper .cbrs_wrapper_banner{padding-top:18%;}
+	.cbrs_body_wrapper .cbrs_body_wrapper_section h1 span{line-height:20px;}
+	
+	.charity_wrapper .charity_wrapper_banner{padding-top:18%;}
+	
+	.contact_wrapper .contact_wrapper_banner{padding-top:18%;}
+	
+	.counselling_wrapper .counselling_wrapper_banner{padding-top:18%;}
+	
+	.eatdis_wrapper .eatdis_wrapper_banner{padding-top:18%;}
+	
+	.familymedicine_wrapper .familymedicine_wrapper_banner{padding-top:18%;}
+	
+	.mission_wrapper .mission_wrapper_banner{padding-top:18%;}
+	
+	.neurofeed_wrapper .neurofeed_wrapper_banner{padding-top:18%;}
+	
+	.neuro_wrapper .neuro_wrapper_banner{padding-top:18%;}
+	
+	.professional_wrapper .professional_wrapper_banner{padding-top:18%;}
+	
+	.psychiatry_wrapper .psychiatry_wrapper_banner{padding-top:18%;}
+	
+	.staff_wrapper .staff_wrapper_banner{padding-top:18%;}
+	
+	.subtan_wrapper .subtan_wrapper_banner{padding-top:18%;}
+	
+	.supportliving_wrapper .supportliving_wrapper_banner{padding-top:18%;}
+	.supportliving_body_wrapper .supportliving_body_wrapper_section h1{line-height:34px;}
+	
+}
+
+
 @media screen and (max-width:767px) {
 
 	.collapse.in {
 		display: block !important;
 		height: auto !important;
 	}
+}
+
+
+@media screen and (max-width:1400px) {
+
+.top_menu_block .top_menu_block_right .navbar-nav > li > a{padding: 10px 14px;}
+}
+@media screen and (max-width:1360px) {
+
+	.top_menu_block .top_menu_block_right .navbar-nav > li > a{padding: 10px 12px;}
 }
 
 /*----------------------------------end-staff-----------------------------------------------*/

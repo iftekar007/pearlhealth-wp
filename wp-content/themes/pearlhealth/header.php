@@ -39,7 +39,7 @@
                         <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/pearl_logo.png"> </a>
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 top_menu_block_right">
-                        <nav class="navbar ">
+                        <nav id="myNavbar" class="navbar " role="navigation">
                             <div class="container-fluid">
                                 <div class="navbar-header"><span class="menu_text">MENU</span>
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -66,14 +66,58 @@
                                             'sort_order' => 'asc',
                                             'child_of' => '0',
                                             'post_type' => 'page',
-                                            'post_status' => 'publish'
+                                            'post_status' => 'publish',
+                                            'parent' => 0,
 
                                         );
                                         $pages = get_pages($args);
 
                                         if ($pages) {
                                             foreach ($pages as $page) :
-                                                echo ' <li class="ssd"><a href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a></li>';
+
+
+
+                                                $args2 = array(
+                                                    'sort_column' => 'post_date',
+                                                    'sort_order' => 'asc',
+                                                    'child_of' => '0',
+                                                    'post_type' => 'page',
+                                                    'post_status' => 'publish',
+                                                    'parent' => $page->ID,
+
+                                                );
+                                                $pages2 = get_pages($args2);
+
+
+
+
+                                                 if($page->ID != 6)
+                                                 {
+                                                     if(count($pages2)>0) {
+                                                         echo ' <li class="ssd dropdown" ><a data-toggle="dropdown" class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+
+                                                         echo "<ul class=dropdown-menu>";
+
+
+                                                         foreach($pages2 as $childpage){
+
+
+                                                             echo ' <li class="ln"><a href="' . get_page_link($childpage->ID) . '"> ' . $childpage->post_title . ' </a></li>';
+
+                                                         }
+                                                         echo "</ul>";
+
+                                                     }else{
+                                                         echo ' <li class="ssd " ><a  class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+                                                     }
+                                                 }else{
+                                                     echo ' <li class="ssd " ><a   href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+                                                 }
+
+
+                                            echo "</li>";
+
+
                                             endforeach;
                                         }
                                         ?>

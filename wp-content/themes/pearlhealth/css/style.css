@@ -2468,10 +2468,13 @@ background:#f8f8f8;
 .top_menu_block .top_menu_block_right .navbar-nav > li > a{text-transform: uppercase; color: #000; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold;}
 .top_menu_block .top_menu_block_right .navbar-nav > li{background: url("../images/menu_listbg.png") no-repeat right center;}
 .top_menu_block .top_menu_block_right .navbar-nav > li:last-child{background: no-repeat;}
-.top_menu_block .top_menu_block_right .navbar-nav > li a:hover{background: no-repeat;}
+.top_menu_block .top_menu_block_right .navbar-nav > li a:hover{background: none;}
+.top_menu_block .top_menu_block_right .navbar-nav > li > a:focus{background:none; border:none;}
+.top_menu_block .top_menu_block_right .navbar-nav > li > a:visited{background:none; border:none;}
 .menu_text{font-family: Arial, sans-serif; color: #70ad01; font-weight: bold; font-size: 24px; padding-top: 9px; padding-right: 10px; display: inline-block; display: none;}
 .top_menu_block .top_menu_block_right .navbar-header{margin: 0 auto; float: none; display: block;}
 
+.top_menu_block .top_menu_block_right .navbar-nav .dropdown-menu > li > a{text-transform: uppercase; color: #1e1e1e; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-align:center;}
 /*-------------------------------------------------end-pearl-header-block---------------------------------------------*/
 
 
@@ -2532,6 +2535,7 @@ background:#f8f8f8;
 .home_block1 h1{font-family:'Lato-Regular'; font-size: 24px; color: #1f1f1f; margin: 0px 0 20px 0;}
 .home_block1 h2{font-family:Arial; font-size: 14px; color: #292929; margin: 0px; line-height: 24px;}
 .home_block1 .home_block1_section{border-right: 1px solid #d6dedf; border-bottom: 1px solid #d6dedf; padding: 0px; }
+.home_block1 .home_block1_section > p{display:none;}
 .home_block1 .home_block1_section_right{border-right: 1px solid transparent!important; border-bottom: 1px solid #d6dedf;}
 .home_block1 .home_block1_section_bottom{border-right: 1px solid #d6dedf; border-bottom: 1px solid transparent;}
 .home_block1 .home_block1_section .home_block1_section_inner{padding: 25px 0px 25px 25px; height: 162px;}
@@ -2585,7 +2589,7 @@ background:#f8f8f8;
 .home_specialist_block h1{font-family: Arial; font-size: 18px; color: #151515; font-weight: bold; margin: 0px; text-transform: uppercase; height: 44px;}
 .home_specialist_block h2{font-family: Arial; font-size: 14px; color: #151515; font-weight: normal; margin: 0px; text-transform: uppercase; border-bottom: 1px solid #9aca42; padding-bottom: 11px;}
 .home_specialist_block h3{font-family: Arial; font-size: 11px; color: #151515; font-weight: bold; margin: 0px; text-transform: uppercase; margin-top: 8px;}
-.home_specialist_block p{font-family: Arial; font-size: 11px; color: #151515; font-weight: bold; margin: 0px; line-height: 16px; margin-top: 8px;}
+.home_specialist_block p{font-family: Arial; font-size: 11px; color: #151515; font-weight: bold; margin: 0px; line-height: 16px; margin-top: 8px; padding-left:0px;}
 .home_specialist_block .home_specialist_imgblock{border: 6px solid #cdd1d3; width: 135px; float: left;}
 .home_specialist_block .home_specialist_imgblock img{width: 100%; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4) inset;}
 .home_specialist_block .home_specialist_descblock{width: 208px; float: left; margin-left: 20px;}
@@ -2621,8 +2625,10 @@ background:#f8f8f8;
 
 .services_wrapper{background: url("../images/services_page_background.png") no-repeat top center; background-size: cover; padding: 0px; position: relative; z-index: 1111; margin-top: -103px; height: 1024px; padding-top: 103px; margin-bottom: -113px;}
 .services_wrapper .services_body_block{width: 1082px; background: rgba(0, 0, 0, 0.6); margin: 98px auto; box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);}
+.services_wrapper .services_body_block > p{display:none;}
 .services_wrapper .services_body_block .services_body_block_content_top{height: 114px; background: rgba(94, 78, 71, 0.5); font-family:'MyriadPro-Bold'; font-size: 60px; text-align: center; color: #fff; letter-spacing: 17px; text-transform: uppercase; text-shadow: -2px 9px 8px rgba(0, 0, 0, 0.6); padding-top: 13px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);}
 .services_wrapper .services_body_block .services_body_block_content{padding: 0px; margin-bottom: 1px;}
+.services_wrapper .services_body_block .services_body_block_content > br{display:none;}
 .services_wrapper .services_body_block .services_body_block_content img{float: left; display: inline-block; width: 148px;}
 .services_wrapper .services_body_block .services_body_block_content span{ display: inline-block; margin-left: 32px; margin-top: 36px; float: left; width: 245px;}
 .services_wrapper .services_body_block .services_body_block_content span a{font-family:'MyriadPro-Regular'; font-size: 24px; color: #fff;}
@@ -2634,17 +2640,26 @@ background:#f8f8f8;
 /*-----------------------------------------------------visit-page----------------------------------------------*/
 
 .visit_wrapper{background: #e4e4e4; padding: 0px;}
+.visit_wrapper > .row > p{display:none;}
 .visit_wrapper .visit_body_block_top{background: url("../images/visit_body_top_img1.png") no-repeat top center; background-size:cover; position: relative; z-index: 1111; margin-top: -102px; padding-top: 142px; padding-bottom: 76px;}
+.visit_wrapper .visit_body_block_top > p{display:none;}
+.visit_wrapper .visit_body_block_top > .row > p{display:none;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section{padding: 0px;}
+.visit_wrapper .visit_body_block_top .visit_body_block_top_section > p{display:none;}
+.visit_wrapper .visit_body_block_top .visit_body_block_top_section > .row > p{display:none;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content{padding: 0px;}
+.visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content > p{display:none;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content h1{font-family:'MyriadPro-Bold'; font-size: 60px; color: #0c0c0c; text-align: center; letter-spacing: 15px; text-transform: uppercase; text-shadow: 1px 1px 8px rgba(255, 255, 255, 1); margin: 0px;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content h2{font-family:'MyriadPro-Bold'; font-size: 48px; color: #0c0c0c; text-align: center; letter-spacing: 1px; text-transform: uppercase; text-shadow: 1px 1px 8px rgba(255, 255, 255, 1); margin: 33px 0px 47px 0;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block{width: 1082px; margin: 0 auto; display: block;}
+.visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block > p{display:none;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block .planning_block_top{ background: rgba(255, 255, 255, 0.5); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6); padding: 28px 0 54px 0;}
+.visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block .planning_block_top > p{display:none;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block h1{font-family:'MyriadPro-Regular'; font-size: 24px; color: #0c0c0c; text-align: center; letter-spacing: 0px; text-transform: capitalize; line-height: 38px;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block h1 img{vertical-align: baseline; display: inline-block; margin: 0 10px;}
 .visit_wrapper .visit_body_block_top .visit_body_block_top_section .visit_body_block_top_section_content .planning_block h1 a{font-family:'MyriadPro-Bold'; font-size: 24px; color: #ec6912;}
 .planning_block_content1{width: 100%; height: 325px; margin-top: -48px; text-align: center;}
+.planning_block_content1 > p{display:none;}
 .planning_block_content1 h1{font-family:'Tahoma-Bold' !important; font-size: 24px; color: #1f1f1f; text-transform: uppercase!important;}
 .planning_block_content1 p{font-family:'MyriadPro-Regular'; font-size: 14px; color: #292929; text-transform: uppercase!important; line-height: 18px;}
 .planning_block_content_imgblock{margin: 0px auto; display: block; margin-top: 58px; height: 100px; text-align: center;}
@@ -2654,6 +2669,7 @@ background:#f8f8f8;
 .planning_block_content2{width: 100%; height: 355px; text-align: center;}
 .planning_block_content2 h1{font-family:'Tahoma-Bold'!important; font-size: 24px; color: #1f1f1f; text-transform: uppercase!important;}
 .planning_block_content2 p{font-family:'MyriadPro-Regular'; font-size: 14px; color: #292929; text-transform: uppercase!important; line-height: 18px;}
+.planning_block_content2 > p{display:none;}
 
 .planning_block_content2 .planning_block_content2_left{background: url("../images/planning_block_content2_leftbg.png") no-repeat top center; background-size:100%; float: left; width: 50%; height: 100%;}
 .planning_block_content2 .planning_block_content2_left img{margin-bottom: 20px;}
@@ -2677,16 +2693,20 @@ background:#f8f8f8;
 .upcoming_event_banner_bottom{position: absolute; bottom: -6px; left: 62%; background:#989999; width: 40%; height: 6px; border-left: 10px solid #fff; border-top: 6px solid transparent;}
 
 .upcoming_event_body_wrapper{padding: 0px;}
+.upcoming_event_body_wrapper > .row > p{display:none;}
 .upcoming_event_body_wrapper .upcoming_event_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
 .upcoming_event_body_wrapper .upcoming_event_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px;}
 .upcoming_event_body_wrapper .upcoming_event_body_wrapper_section h1 img{display: inline-block; margin-right: 10px; vertical-align: middle;}
 .upcoming_event_body_wrapper .upcoming_event_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px;}
+.upcoming_event_body_wrapper .upcoming_event_body_wrapper_section > p:last-child{display:none;}
 
 .upcoming_event_body_gellary{padding: 0px;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block{margin-bottom: 20px;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_left{padding-left: 0px;}
+.upcoming_event_body_gellary .upcoming_event_body_gellary_block_left > p{display:none;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_right{padding-right: 0px;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_content{padding: 40px 0px 15px 0; background: url("../images/upcoming_events_body_gellary_blockbg.png") repeat-y top right;}
+.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content > p{display:none;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_imgblock{border: 3px solid #9aca42; width: 552px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_imgblock img{width: 100%;}
 .upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_block_left{width: 40%; float: left; padding-right: 7%;}
@@ -2708,16 +2728,23 @@ background:#f8f8f8;
 .mission_wrapper .mission_wrapper_banner{margin-top: -103px; background: url("../images/mission_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
 
 .mission_body_gellary{padding: 0px;}
+.mission_body_gellary > .row > p{display:none;}
 .mission_body_gellary .mission_body_gellary_section{padding: 0px;}
+.mission_body_gellary .mission_body_gellary_section > p{display:none;}
 .mission_body_gellary .mission_body_gellary_section .mission_body_img1{width: 100%; border: 1px solid #cfcfcf;}
 .mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content{background: #d8deea; padding: 20px; padding-bottom: 0px;}
 .mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p{font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 0px 0px 15px 0px;}
+.mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content > p:last-child{display:none;}
+
+
 .mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p .mission_body_gellary_imgblock{float: left; border-top: 5px solid #fff; border-right: 5px solid #fff; margin: 15px 15px 0px -20px;}
 .mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p .mission_body_gellary_imgblock img{border: 1px solid #b5bbc7;}
 
 .mission_body_bottom{padding: 0px;}
+.mission_body_bottom > .row > p{display:none;}
 .mission_body_bottom .mission_body_bottom_section{padding: 0px;}
 .mission_body_bottom .mission_body_bottom_section p{font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; background: url("../images/mission_body_icon2.png") no-repeat center left; padding-left: 154px; margin-top: 20px;}
+.mission_body_bottom .mission_body_bottom_section > p:last-child{display:none;}
 
 
 /*-----------------------------------------------------end-mission-page----------------------------------------------*/
@@ -2728,20 +2755,27 @@ background:#f8f8f8;
 .contact_wrapper .contact_wrapper_banner{margin-top: -103px; background: url("../images/contact_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
 
 .contact_body_section{padding: 0px;}
+.contact_body_section > .row > p{display:none;}
 .contact_body_section .contact_body_section_map{padding: 0px; border: 3px solid #9aca42; height: 306px; margin: 0px auto; margin-top: 25px;}
 .contact_body_section .contact_body_section_map iframe{width: 100%; height: 100%;}
 
+.contact_form_section > .row > p{display:none;}
 .contact_form_section h1{font-family:'Lato-Regular'; font-size: 24px; color: #1f1f1f; text-transform: uppercase; letter-spacing: 1px; text-align: center; margin:10px 0;}
 .contact_form_section h2{font-family:Arial; font-size: 14px; color: #3d454a; text-align: center; margin: 0px;}
 .contact_form_section .contact_form_section_headline{background: #9aca42; height: 1px; width: 196px; margin: 15px auto; display: block;}
 
+.contact_form_section .contact_form_section_content > p{display:none;}
 .contact_form_section .contact_form_section_content{width: 1060px; margin: 10px auto;}
 .contact_form_section .contact_form_section_address label{font-family:'Lato-Regular'; font-size: 20px; color: #1f1f1f; line-height: 20px; margin: 0px; font-weight: normal;}
-.contact_form_section .contact_form_section_address p{font-family:Arial; font-size: 14px; color: #3d454a; margin: 0px 0 30px 0;}
+.contact_form_section .contact_form_section_address > p{margin:0px;}
+.contact_form_section .contact_form_section_address > p > br{display:none;}
+.contact_form_section .contact_form_section_address h4{font-family:Arial; font-size: 14px; color: #3d454a; margin: 0px 0 30px 0;}
 .contact_form_section .contact_form_section_address a{font-family:Arial; font-size: 14px; color: #3d454a; margin: 0px 0 30px 0; display: block}
 .contact_form_section .contact_form_section_address a:last-child{margin: 0px;}
 .contact_form_section .contact_form_section_address .contact_form_section_addressline{background: #9aca42; height: 1px; width: 47px; margin: 6px 0;}
 
+.contact_form_section .contact_form_section_input > p{display:none;}
+.contact_form_section .contact_form_section_input form > br{display:none;}
 .contact_form_section .contact_form_section_input .contact_input{background: #e4e4e4; border: 1px solid #d5d5d5; font-family: Arial; font-size: 14px; color: #898989; font-style: italic; width: 100%; display: block; margin-bottom: 20px; height: 48px; padding-left: 20px;}
 .contact_form_section .contact_form_section_input .contact_massage{background: #e4e4e4; border: 1px solid #d5d5d5; font-family: Arial; font-size: 14px; color: #898989; font-style: italic; width: 100%; display: block; padding-left: 20px; padding-top: 12px;}
 .contact_form_section .contact_form_section_input .contact_name{width: 48%; margin-right: 1%; display: inline-block;}
@@ -2758,6 +2792,8 @@ background:#f8f8f8;
 .psychiatry_body_section1{padding: 0px;}
 .psychiatry_body_section1 .psychiatry_body_section1_left{padding-left: 0px;}
 .psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock{border: 3px solid #9aca42; position: relative;}
+.psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock > br{display:none;}
+.psychiatry_body_section1 .psychiatry_body_section1_left > p{display:none;}
 .psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock img{width: 100%; position: relative;}
 .psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext1{font-family: Arial; font-size: 30px; color: #232323; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; background: #9aca42; padding: 10px; position: absolute; bottom: 107px; left: 22px;}
 .psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext2{font-family: Arial; font-size: 33px; color: #7baa26; letter-spacing: 1px; background: #fff; padding: 10px; position: absolute; bottom: 40px; left: 22px;}
@@ -2767,12 +2803,15 @@ background:#f8f8f8;
 .psychiatry_body_section1 .psychiatry_body_section1_right p{font-family: Arial; font-size: 14px; color: #151515; margin: 0px;}
 .psychiatry_body_section1 .psychiatry_body_section1_right .psychiatry_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
 .psychiatry_body_section1 .psychiatry_body_section1_right li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top; padding-left: 34px;}
+.psychiatry_body_section1 .psychiatry_body_section1_right li > br{display:none;}
 
 .psychiatry_body_section2{padding: 0px;}
 .psychiatry_body_section2 .psychiatry_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #151515; line-height: 18px; margin: 20px 0;}
+.psychiatry_body_section2 > p{display:none;}
 
 .psychiatry_body_section3{padding: 0px;}
 .psychiatry_body_section3 .psychiatry_body_section3_content{padding: 20px 0 11px 40px; background:#8ab835 url("../images/psychiatry_body_img2.png") no-repeat right center;}
+.psychiatry_body_section3 .psychiatry_body_section3_content > p{display:none;}
 .psychiatry_body_section3 .psychiatry_body_section3_content h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
 .psychiatry_body_section3 .psychiatry_body_section3_content h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0 18px 0;}
 .psychiatry_body_section3 .psychiatry_body_section3_content .psychiatry_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
@@ -2787,11 +2826,14 @@ background:#f8f8f8;
 .counselling_wrapper .counselling_wrapper_banner{margin-top: -103px; background: url("../images/counselling_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
 
 .counselling_body_section1{padding: 0px; margin-top: 40px;}
+.counselling_body_section1 > .row > p{display:none;}
 .counselling_body_section1 .counselling_body_section1_left{padding: 0px;}
+.counselling_body_section1 .counselling_body_section1_left > p:last-child{display:none;}
 .counselling_body_section1 .counselling_body_section1_left .counselling_body_section1_left_content{border-left: 2px solid #9aca42; padding-left: 15px;}
 .counselling_body_section1 .counselling_body_section1_left h3{font-family: Arial; font-size: 18px; color: #151515; margin: 0px; text-transform: uppercase;}
 .counselling_body_section1 .counselling_body_section1_left h1{font-family: Arial; font-size: 35px; color: #3d454a; margin: 16px 0; text-transform: uppercase;  font-weight: bold;}
 .counselling_body_section1 .counselling_body_section1_left p{font-family: Arial; font-size: 14px; color: #3d454a; margin: 16px 0 0 0; line-height: 18px;}
+.counselling_body_section1 .counselling_body_section1_left .counselling_body_section1_left_content > p:last-child{display:none;}
 
 .counselling_body_section1 .counselling_body_section1_right{padding-left: 40px;}
 .counselling_body_section1 .counselling_body_section1_right h1{font-family: Arial; font-size: 35px; color: #3d454a; margin: 0; text-transform: uppercase;
@@ -2799,12 +2841,16 @@ font-weight: bold;}
 .counselling_body_section1 .counselling_body_section1_right p{font-family: Arial; font-size: 18px; color: #151515; margin: 0;}
 .counselling_body_section1 .counselling_body_section1_right .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
 .counselling_body_section1 .counselling_body_section1_right li{font-family: Arial; font-size: 17px; color: #151515; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.counselling_body_section1 .counselling_body_section1_right li > br{display:none;}
 
 .counselling_body_section2{padding: 0px;}
-.counselling_body_section2 .counselling_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 20px 0 25px 0;}
+.counselling_body_section2 .counselling_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 0px 0 15px 0;}
+.counselling_body_section2 > .row > p{display:none;}
 
 .counselling_body_section3{padding: 0px;}
+.counselling_body_section3 > .row > p{display:none;}
 .counselling_body_section3 .counselling_body_section3_content{background: url("../images/counselling_body_img1.png") no-repeat top center; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.counselling_body_section3 .counselling_body_section3_content > p{display:none;}
 .counselling_body_section3 .counselling_body_section3_content .counselling_book_block{width: 460px; margin: 0 auto;}
 .counselling_body_section3 .counselling_body_section3_content .counselling_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
 .counselling_body_section3 .counselling_body_section3_content .counselling_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
@@ -2822,32 +2868,44 @@ font-weight: bold;}
 .staff_wrapper .staff_wrapper_banner{margin-top: -103px; background: url("../images/staff_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
 
 .staff_body_wrapper{padding: 0px;}
+.staff_body_wrapper > .row > p{display:none;}
 .staff_body_wrapper .staff_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
 .staff_body_wrapper .staff_body_wrapper_section h1{margin: 8px 0 20px 0; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/staff_body_icon1.png") no-repeat left center; padding-left: 60px; line-height: 31px;}
 .staff_body_wrapper .staff_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px;}
+.staff_body_wrapper .staff_body_wrapper_section > p:last-child{display:none;}
 
 .staff_body_select{padding: 0px; margin-bottom: 14px;}
+.staff_body_select > .row > p{display:none;}
 .staff_body_select .staff_body_select_section{padding: 0px;}
+.staff_body_select .staff_body_select_section > p{display:none;}
 
-.staff_body_main_section_top{width: 60%; margin: 0 auto;}
+.staff_body_main_section_top{width: 61%; margin: 0 auto;}
+.staff_body_main_section_top > br{display:none;}
+.staff_body_main_section_top > p{display:none;}
 .staff_body_main_section_top .staff_body_option{background: #e4e4e4; border: 1px solid #d5d5d5; width: 275px; display: inline-block; height: 38px; font-family: Arial; font-size: 14px; color: #898989; font-style: italic; padding-left: 20px; margin-right: 4%;}
 .staff_body_main_section_top .staff_name_checkbox{display: inline-block;}
 .staff_body_main_section_top .staff_name_checkbox input[type="checkbox"]{vertical-align: sub; background: #e4e4e4; border: 1px solid #d8d8d8; border-radius: 0px; margin-right: 5px;}
 .staff_body_main_section_top .staff_name_checkbox span{font-family: Arial; font-size: 14px; color: #898989;}
 
 .staff_body_gellary{padding: 0px;}
+.staff_body_gellary > .row > p{display:none;}
 .staff_body_gellary_left{padding-left: 0px;}
+.staff_body_gellary_left > p{display:none;}
 .staff_body_gellary_right{padding-right: 0px;}
+.staff_body_gellary_right > p{display:none;}
 .gellary_block{background: #e4e4e4; border: 1px solid #9aca42; margin: 20px 0;}
+.gellary_block > p{display:none;}
 .gellary_block .gellary_block_left{float: left; width: 260px; height: 255px;}
 .gellary_block .gellary_block_left img{width: 100%; height: 100%;}
 .gellary_block .gellary_block_right{float: left; width: 305px; height: 255px; padding: 20px 0 20px 20px;}
 .gellary_block .gellary_block_right h1{font-family: Arial; font-size: 17px; color: #151515; font-weight: bold; margin: 0px; text-transform: uppercase;}
 .gellary_block .gellary_block_right p{font-family: Arial; font-size: 14px; color: #151515; margin: 0px; padding: 10px 0; background: url("../images/staff_body_gellary_line.png") no-repeat bottom left;}
+.gellary_block .gellary_block_right > p:last-child{background:none;}
 .gellary_block .gellary_block_right h2{font-family: Arial; font-size: 15px; color: #151515; text-transform: uppercase; margin: 9px 0;}
 .gellary_block .gellary_block_right h3{font-family: Arial; font-size: 15px; color: #151515; line-height: 20px; margin: 0 0 12px 0;}
 .gellary_block .staff_detail{background: #9aca42; width: 140px; height: 38px; font-family: Arial; font-size: 15px; color: #fff; text-align: center; display: inline-block; padding-top: 7px;}
 .gellary_block .gellary_btntop{height: 82px;}
+.gellary_block .gellary_btntop > p{display:none;}
 .staff_body_gellary_right .gellary_block{margin-left: 15px;}
 
 /*------popup------*/
@@ -2870,16 +2928,20 @@ font-weight: bold;}
 
 /*-----------------------------------------------------faq-page----------------------------------------------*/
 
-.faq_wrapper{background: url("../images/faq_body_banner.png") no-repeat top 60px center; background-size: 119%; padding: 260px 0 0 0; position: relative; z-index: 1111; margin-top: -103px; height: 1548px; margin-bottom: -113px; background-attachment: fixed;}
+.faq_wrapper{background: url("../images/faq_body_banner.png") no-repeat top 62px center; background-size: 119%; padding: 260px 0 0 0; position: relative; z-index: 1111; margin-top: -185px; height: 1596px; margin-bottom: -113px; background-attachment: fixed;}
+.faq_wrapper > .row > p{display:none;}
+.faq_body_block > .row > p{display:none;}
+.faq_body_block_section > p{display:none;}
 
 .faq_body_main{width: 1082px; margin: 0 auto; box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6); position: relative;}
+.faq_body_main > p{display:none;}
 .faq_body_main_top{background: url("../images/faq_body_main_topbg.png") no-repeat top center; height: 102px; font-family:'MyriadPro-Regular'; font-size: 72px; color: #fff; text-transform: uppercase; text-align: center;}
 
-.faq_body_main_middle{ margin-top: 6px; height: 1011px; }
+.faq_body_main_middle{ margin-top: 6px; height: 1044px; }
 .faq_body_main_middle::-webkit-scrollbar {display: none;}
 
 
-
+.faq_body_main_middle > p{display:none;}
 .faq_body_main_middle .faq_body_main_middle_top{position: absolute; top: 53px;}
 .faq_body_main_middle h1{font-family:'MyriadPro-Semibold'; font-size: 24px; color: #292929; margin: 0px 0 10px 0; border-bottom: 1px dotted #494848; padding-left: 65px; padding-bottom: 18px;}
 .faq_body_main_middle p{font-family:'MyriadPro-Regular'; font-size: 15px; color: #292929; line-height: 30px; margin: 0px;}
@@ -2907,29 +2969,48 @@ font-weight: bold;}
 .career_wrapper .career_wrapper_banner{margin-top: -103px; background: url("../images/career_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px}
 
 .career_body_wrapper{padding: 0px;}
+.career_body_wrapper > .row > p{display:none;}
 .career_body_wrapper .career_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
 .career_body_wrapper .career_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/career_body_icon1.png") no-repeat left center; padding-left: 60px; line-height: 50px;}
+.career_body_wrapper .career_body_wrapper_section > p{display:none;}
 
 .career_body_gellary{padding: 0px; margin-top: 20px;}
+.career_body_gellary > .row > p{display:none;}
 .career_body_gellary .career_body_gellary_section{padding: 0px;}
+.career_body_gellary .career_body_gellary_section > p{display:none;}
 .career_body_gellary .career_body_gellary_section .career_gellary_headtext{font-family:'MyriadPro-Semibold'; font-size: 22px; color: #fff; background: #8ab835; width: 100%; display: block; padding: 16px 26px;}
 .career_body_gellary .career_body_gellary_section p{font-family: Arial; font-size: 14px; color: #3d454a; line-height: 24px; margin: 0px; padding-top: 25px; padding-bottom: 57px;}
+.career_body_gellary .career_body_gellary_section p > br{display:none;}
 .career_gellary_block1 p{background: url("../images/career_body_img1.png") no-repeat right center; padding-right: 330px;}
+.career_gellary_block1 > p:last-child{display:none;}
 .career_gellary_block2 p{background: url("../images/career_body_img2.png") no-repeat left center; padding-left: 335px; padding-bottom: 30px!important;}
+.career_gellary_block2 > p:last-child{display:none;}
+
+.career_gellary_block3 > p{display:none;}
 
 .career_form_block{width: 100%; margin: 15px 0;}
+.career_form_block > p{display:none;}
 .career_form_block .career_form_block_left{width: 30%; float: left;}
 .career_form_block .career_form_block_left ul{padding-left: 3%;}
 .career_form_block .career_form_block_left ul li{ background: url("../images/career_body_liststyle.png") no-repeat left center; padding-left: 20px; margin-bottom: 20px;}
 .career_form_block .career_form_block_left ul li a{font-family: Arial; font-size: 14px; color: #3d454a;}
 .career_form_block .career_form_block_right{width: 70%; float: left; border: 1px solid #bdbcbc;}
+.career_form_block .career_form_block_right > p{display:none;}
 .career_form_block .career_form_block_right .career_form_block_right_top{font-family:'MyriadPro-Semibold'; font-size: 24px; color: #293239; background: #dad9d9; text-align: center; padding: 15px 65px;}
+.career_form_block .career_form_block_right .career_form_block_right_top > br{display:none;}
 .career_form_block .career_form_block_right .career_form_section{width: 90%; margin: 0 auto; margin-top: 30px;}
+.career_form_block .career_form_block_right .career_form_section > p{display:none;}
+.career_form_block .career_form_block_right .career_form_section form > br{display:none;}
+.career_form_block .career_form_block_right .career_form_section form > p{padding:0px;}
+
 .career_form_block .career_form_block_right .career_form_section label{font-family: Arial; font-size: 14px; color: #373636; margin: 10px 0; font-weight: normal;}
 .career_form_block .career_form_block_right .career_form_section .career_form_input{border: 1px solid #d4d3d3; height: 32px; padding-left: 10px; width: 100%; font-family: Arial; font-size: 14px; color: #373636; font-style: italic;}
 .career_form_block .career_form_block_right .career_form_section .career_input_left{width: 48%; float: left;}
+.career_form_block .career_form_block_right .career_form_section .career_input_left > br{display:none;}
 .career_form_block .career_form_block_right .career_form_section .career_input_right{width: 48%; float: right;}
+.career_form_block .career_form_block_right .career_form_section .career_input_right > br{display:none;}
 .career_form_block .career_form_block_right .resume_area{border: 1px dotted #a3a4a4; width: 100%; height: 138px; text-align: center; padding-top: 6%;}
+.career_form_block .career_form_block_right .resume_area > br{display:none;}
 .career_form_block .career_form_block_right .resume_area span{display: inline-block; font-family: Arial; font-size: 14px; color: #15191c; margin-right: 15px;}
 .career_form_block .career_form_block_right .resume_area .select_file{width: 114px; display: inline-block; height: 42px; text-align: center; font-family: Arial; font-size: 14px; color: #fff; background: #639c27; border-radius: 6px; margin: 0 auto; padding-top: 10px;}
 .career_form_block .career_form_block_right .career_submitbtn{float: right; width: 114px; display: inline-block; height: 42px; text-align: center; font-family: Arial; font-size: 14px; color: #fff; background: #639c27; border-radius: 6px; border: none; margin: 20px 0;}
@@ -2939,12 +3020,14 @@ font-weight: bold;}
 
 /*-----------------------------------------------------gellary-page----------------------------------------------*/
 
+.gellary_wrapper > .row > p{display:none;}
 .gellary_wrapper img{display: block; margin: 15px auto;}
 
+.gellary_body_wrapper > .row > p{display:none;}
 .gellary_body_wrapper .gellary_photo_text_block{background: url("../images/gellary_bodybg_img1.png") no-repeat left center; width: 580px; margin-left: 4%; margin-top: -100px; padding: 20px 0 20px 150px;}
 .gellary_body_wrapper .gellary_photo_text_block h1{font-family:'MyriadPro-Semibold'; font-size: 24px; color: #454444; text-transform: uppercase; margin: 0px 0 10px 0;}
 .gellary_body_wrapper .gellary_photo_text_block p{font-family:Arial; font-size: 14px; color: #454444; line-height: 24px; margin: 0px;}
-
+.gellary_body_wrapper .gellary_photo_text_block > p:last-child{display:none;}
 
 
 .gellary_body_photo_container{padding: 0px;}
@@ -2954,11 +3037,13 @@ font-weight: bold;}
 .gellary_body_photo_block .gellary_body_photo_img img{width: auto; max-width: 100%; height: auto; max-height: 100%;}
 
 .myCarousel_gellaryphoto{padding: 0px ; border-left: 1px solid #cacdce; border-top: 1px solid #cacdce; margin: 40px auto;}
+.myCarousel_gellaryphoto > p{display:none;}
+#myCarousel_gellaryphoto > p{display:none;}
 #myCarousel_gellaryphoto .carousel-control.left{position: absolute; bottom: -34px; right: 0%; left: inherit; top: inherit; width: 15%; opacity: .5;}
 #myCarousel_gellaryphoto .carousel-control .glyphicon-chevron-left{color: #000; right: 0%; bottom: 0%; font-size: 25px;}
 #myCarousel_gellaryphoto .carousel-control.right{position: absolute; bottom: -34px; right: 4%; left: inherit; top: inherit; width: 15%; opacity: .5;}
 #myCarousel_gellaryphoto .carousel-control .glyphicon-chevron-right{color: #000; right: 0%; bottom: 0%; font-size: 25px;}
-
+#myCarousel_gellaryphoto .carousel-inner > p{display:none;}
 
 
 .gellary_body_photo_img_hover{width: 25%; background: #fff; height: 216px; padding: 20px 22px; border: 1px solid #cacdce;}
@@ -2997,8 +3082,10 @@ font-weight: bold;}
 .news_body_gellary .news_body_gellary_left{padding: 0px;}
 
 .news_body_gellary_block{border-bottom: 1px solid #d5d6d6; padding-bottom: 20px; margin-bottom: 30px;}
+.news_body_gellary_block > p{display:none;}
 .news_body_gellary_block h1{font-family:'MyriadPro-Semibold'; font-size: 24px; color: #535352; margin: 0px; line-height: 16px;}
 .news_body_gellary_block p{font-family:Arial; font-size: 14px; color: #535352; margin: 0px; line-height: 24px; margin: 23px 0 24px 0;}
+.news_body_gellary_block .news_body_gellary_block_bottom br{display:none;}
 .news_body_gellary_block .news_body_gellary_block_bottom .gellary_block_edit{font-family: Arial; font-size: 12px; color: #0373ca; float: left;}
 .news_body_gellary_block .news_body_gellary_block_bottom .gellary_block_edit img{vertical-align: inherit; display: inline-block; margin-right: 6px;}
 .news_body_gellary_block .news_body_gellary_block_bottom .gellary_date{float: right;}
@@ -3008,6 +3095,7 @@ font-weight: bold;}
 .news_body_gellary_block .news_body_gellary_block_left{float: left; width: 204px;}
 .news_body_gellary_block .news_body_gellary_block_left img{border: 1px solid #d1d2d3;}
 .news_body_gellary_block .news_body_gellary_block_right{float: right; width: 668px;}
+.news_body_gellary_block .news_body_gellary_block_right > p:last-child{display:none;}
 .news_body_gellary .news_body_gellary_right{padding-right: 0px;}
 .news_body_gellary .news_body_gellary_right img{float: right; margin-bottom: 15px; width: 98%;}
 
@@ -3024,6 +3112,7 @@ font-weight: bold;}
 .familymedicine_body_wrapper .familymedicine_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
 .familymedicine_body_wrapper .familymedicine_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/familymedicine_body_icon1.png") no-repeat left center; padding-left: 60px; line-height: 50px;}
 .familymedicine_body_wrapper .familymedicine_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px;}
+.familymedicine_body_wrapper .familymedicine_body_wrapper_section > p:last-child{display:none;}
 
 .familymedicine_body_gellary{padding: 0px; margin-bottom: 20px;}
 .familymedicine_body_gellary .familymedicine_body_gellary_left{padding-left: 0px;}
@@ -3032,6 +3121,8 @@ font-weight: bold;}
 .familymedicine_body_gellary .familymedicine_body_gellary_right h2{font-family: Arial; font-size: 18px; color: #151515; margin: 0px 0 10px 0; border-bottom: 1px solid #9aca42; padding: 10px 0; display: inline-block;}
 .familymedicine_body_gellary .familymedicine_body_gellary_right li{font-family: Arial; font-size: 17px; color: #151515; line-height: 22px; font-weight: bold; background: url("../images/familymedicine_body_icon2.png") no-repeat left top; padding-left: 35px; margin-bottom: 20px;}
 .familymedicine_body_gellary .familymedicine_body_gellary_right li:last-child{margin-bottom: 0px;}
+.familymedicine_body_gellary .familymedicine_body_gellary_right li > br{display:none;}
+.familymedicine_body_gellary > p{display:none;}
 
 .familymedicine_body_block2{background:#e4e4e4 url("../images/familymedicine_body_block2_img1.png") no-repeat center top; background-size: 100%; text-align: center; padding-top: 30px; padding-bottom: 10px;}
 .familymedicine_body_block2_content{padding: 0px;}
@@ -3042,9 +3133,12 @@ font-weight: bold;}
 .familymedicine_body_block3{padding: 0px;}
 .familymedicine_body_block3 .familymedicine_body_block3_content{padding: 0px;}
 .familymedicine_body_block3 .familymedicine_body_block3_content p{font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 0px;}
+.familymedicine_body_block3 > p{display:none;}
 
 .familymedicine_body_block4{padding: 0; margin: 18px auto;}
+.familymedicine_body_block4 > p{display:none;}
 .familymedicine_body_block4_content{background:#9aca42 url("../images/familymedicine_body_block4bg.png") no-repeat left center; padding: 19px 0px;}
+.familymedicine_body_block4_content > p{display:none;}
 .familymedicine_body_block4_content_text{width: 460px; margin-left: 55%;}
 .familymedicine_body_block4_content_text h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
 .familymedicine_body_block4_content_text h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
@@ -3065,9 +3159,11 @@ font-weight: bold;}
 .about_body_wrapper .about_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
 .about_body_wrapper .about_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/about_body_icon1.png") no-repeat left center; padding-left: 60px; line-height: 50px;}
 .about_body_wrapper .about_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px;}
+.about_body_wrapper .about_body_wrapper_section > p:last-child{display:none;}
 
 .about_body_block{padding: 62px 0px; background: url("../images/about_body_banner.png") no-repeat top center; background-size: 100%; width: 1200px;}
 .about_body_block .about_body_block_col{padding: 0px;}
+.about_body_block .about_body_block_col > p{display:none;}
 .about_body_block_content{width: 646px; margin-left: 47%;}
 .about_body_block_content .about_body_block_content_text{width: 88%;}
 .about_body_block_content .about_body_block_content_text h1{font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; line-height: 37px; margin: 0px;}
@@ -3080,3 +3176,449 @@ font-weight: bold;}
 .about_body_block_content_bottom .foot_address_block3_content{background: url("../images/message_icon.png") no-repeat left center; padding-left: 68px; padding-top: 19px; height: 61px; display: inline-block; float: left;}
 .about_body_block_content_bottom .foot_address_block3_content a{text-transform: lowercase;}
 /*-----------------------------------------------------end-about-page----------------------------------------------*/
+
+/*-----------------------------------------------neuropsychological------------------------------------------------------*/
+
+.neuro_wrapper{padding: 0px;}
+.neuro_wrapper .neuro_wrapper_banner{margin-top: -103px; background: url("../images/neuro_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.neuro_body_wrapper{padding: 0px;}
+.neuro_body_wrapper .neuro_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.neuro_body_wrapper .neuro_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/neuro_body_icon1.png") no-repeat left top 3px; padding-left: 60px; line-height: 37px;}
+.neuro_body_wrapper .neuro_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px;}
+.neuro_body_wrapper .neuro_body_wrapper_section > p:last-child{display:none;}
+
+
+.neuro_body_section1{padding: 0px;}
+.neuro_body_section1 .supportliving_body_section1_left{padding-left: 0px;}
+
+.neuro_body_section1 .neuro_body_section1_left{padding-left: 0px;}
+.neuro_body_section1 .neuro_body_section1_left h1{font-family: Arial; font-size: 23px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.neuro_body_section1 .neuro_body_section1_left p{font-family: Arial; font-size: 18px; color: #151515; margin: 0;}
+.neuro_body_section1 .neuro_body_section1_left .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.neuro_body_section1 .neuro_body_section1_left ul{margin-bottom:0px;}
+.neuro_body_section1 .neuro_body_section1_left li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.neuro_body_section1 .neuro_body_section1_left li > br{display:none;}
+
+.neuro_body_section1 .neoro_body_section1_right{border-left:2px solid #9aca42; padding-left: 20px;}
+.neuro_body_section1 .neoro_body_section1_right h1{font-family: Arial; font-size: 35px; color: #3d454a; font-weight: bold; margin: 4px  0; text-transform: uppercase;
+	font-weight: bold;}
+.neuro_body_section1 .neoro_body_section1_right h2{font-family: Arial; font-size: 18px; color: #151515; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.neuro_body_section1 .neoro_body_section1_right p{font-family: Arial; font-size: 14px; color: #3d454a; margin: 0; line-height: 18px; padding-left: 0px;}
+.neuro_body_section1 .neoro_body_section1_right > p:last-child{display:none;}
+
+.neuro_body_section2{padding: 0px;}
+.neuro_body_section2 .neuro_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 0px 0 15px 0;}
+.neuro_body_section2 > .row > p{display:none;}
+
+.neuro_body_section3{padding: 0px;}
+.neuro_body_section3 .neuro_body_section3_content{background:#d2d2d2 url("../images/neuro_body_img1.png") no-repeat top left; border: 1px solid #d7d9d1; padding: 22px 0 5px 0;}
+.neuro_body_section3 > .row > p{display:none;}
+.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block{width: 460px; margin: 0 60px 0 0; float: right;}
+.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.neuro_body_section3 .neuro_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-neuropsychological-------------------------------------------------*/
+
+/*-----------------------------------------------eatingdisorders------------------------------------------------------*/
+
+.eatdis_wrapper{padding: 0px;}
+.eatdis_wrapper .eatdis_wrapper_banner{margin-top: -103px; background: url("../images/eatdis_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.eatdis_body_wrapper{padding: 0px;}
+.eatdis_body_wrapper > .row > p{display:none;}
+.eatdis_body_wrapper .eatdis_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.eatdis_body_wrapper .eatdis_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/eatdis_body_icon1.png") no-repeat left top; padding-left: 60px; line-height: 49px;}
+.eatdis_body_wrapper .eatdis_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding: 0px;}
+.eatdis_body_wrapper .eatdis_body_wrapper_section > p:last-child{display:none;}
+
+.eatdis_body_section1{padding: 0px;}
+.eatdis_body_section1 > .row > p{display:none;}
+.eatdis_body_section1 .eatdis_body_section1_left{padding-left: 0px;}
+.eatdis_body_section1 .eatdis_body_section1_left h1{font-family: Arial; font-size: 23px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.eatdis_body_section1 .eatdis_body_section1_left p{font-family: Arial; font-size: 18px; color: #151515; margin: 0; padding-left: 0px;}
+.eatdis_body_section1 .eatdis_body_section1_left .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.eatdis_body_section1 .eatdis_body_section1_left li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.eatdis_body_section1 .eatdis_body_section1_left li > br{display:none;}
+
+.eatdis_body_section1_right_col{ border: 3px solid #9aca42; padding: 0px;}
+.eatdis_body_section1_right_col > p{display:none;}
+.eatdis_body_section1_right{background:#a8bccf url("../images/eatdis_body_img1.png") no-repeat top center; padding-top: 50px; padding-bottom: 25px;}
+.eatdis_body_section1_right h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px 0 10px 0; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px; text-transform: lowercase; padding-left: 25px;}
+.eatdis_body_section1_right p{font-family: Arial; font-size: 18px; color: #3d454a; line-height: 22px; width: 50%; padding-left: 25px;}
+.eatdis_body_section1_right > p:last-child{display:none;}
+
+
+.eatdis_body_section3{padding: 0px; margin: 0px auto; margin-bottom:20px;}
+.eatdis_body_section3 > .row > p{display:none;}
+.eatdis_body_section3 .eatdis_body_section3_content{background:#d2d2d2 url("../images/eatdis_body_img2.png") no-repeat top right; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.eatdis_body_section3 .eatdis_body_section3_content > p{display:none;}
+.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block{width: 460px; margin: 0 0px 0 45px;}
+.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.eatdis_body_section3 .eatdis_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-eatingdisorders-------------------------------------------------*/
+
+/*-----------------------------------------------neurofeedbacktherapy------------------------------------------------------*/
+
+.neurofeed_wrapper{padding: 0px;}
+.neurofeed_wrapper .neurofeed_wrapper_banner{margin-top: -103px; background: url("../images/neurofeed_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.neurofeed_body_wrapper{padding: 0px;}
+.neurofeed_body_wrapper > .row > p{display:none;}
+.neurofeed_body_wrapper .neurofeed_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.neurofeed_body_wrapper .neurofeed_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/neurofeed_body_icon1.png") no-repeat left top; padding-left: 60px; line-height: 44px;}
+.neurofeed_body_wrapper .neurofeed_body_wrapper_section > p{display:none;}
+
+.neurofeed_body_section1{padding: 0px; margin-top: 20px;}
+.neurofeed_body_section1 > .row > p{display:none;}
+.neurofeed_body_section1 .neurofeed_body_section1_right{padding-left: 40px;}
+
+
+.neurofeed_body_section1 .neurofeed_body_section1_right h1{font-family: Arial; font-size: 23px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.neurofeed_body_section1 .neurofeed_body_section1_right p{font-family: Arial; font-size: 18px; color: #151515; margin: 0;}
+.neurofeed_body_section1 .neurofeed_body_section1_right .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.neurofeed_body_section1 .neurofeed_body_section1_right li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.neurofeed_body_section1 .neurofeed_body_section1_right li > br{display:none;}
+
+.neurofeed_body_section1 .neorofeed_body_section1_left{padding-left: 0px;}
+.neorofeed_body_section1_left_content{border-left:2px solid #9aca42; padding-left: 20px;}
+.neurofeed_body_section1 .neorofeed_body_section1_left h1{font-family: Arial; font-size: 35px; color: #3d454a; font-weight: bold; margin: 4px  0; text-transform: uppercase;
+	font-weight: bold;}
+.neurofeed_body_section1 .neorofeed_body_section1_left h2{font-family: Arial; font-size: 18px; color: #151515; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.neurofeed_body_section1 .neorofeed_body_section1_left p{font-family: Arial; font-size: 14px; color: #3d454a; margin: 0; line-height: 18px;}
+
+.neurofeed_body_section2{padding: 0px;}
+.neurofeed_body_section2 > .row > p{display:none;}
+.neurofeed_body_section2 .neurofeed_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 10px 0;}
+
+.neurofeed_body_section3{padding: 0px;}
+.neurofeed_body_section3 > .row > p{display:none;}
+.neurofeed_body_section3_col{padding: 0px;}
+.neurofeed_body_section3_col > p:last-child{display:none;}
+.neurofeed_body_section3_col .neurofeed_body_section3_left_content{display: inline-block; background: url("../images/neurofeed_body_img1.png") no-repeat top left; border: 3px solid #9aca42; float: left; width: 550px; margin: 10px 20px 10px 0px;}
+.neurofeed_body_section3_col .neurofeed_body_section3_left_content > p{display:none;}
+.neurofeed_body_section3_left_content h2{background: #9aca42; width: 310px; margin: 130px 0 0 36px; display: inline-block; font-family: Arial; font-size: 30px; color: #232323; font-weight: bold; padding: 16px 20px;}
+.neurofeed_body_section3_left_content h3{background: rgba(218, 235, 246, 0.9); width: 360px; margin: 0px 0 30px 36px; display: inline-block; font-family: Arial; font-size: 33px; color: #7baa26; font-weight: normal; padding: 16px 20px; text-transform: inherit;}
+.neurofeed_body_section3_col p{font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin-bottom: 10px; display: inline;}
+
+.neurofeed_body_section4{padding: 0px; margin: 20px auto;}
+.neurofeed_body_section4 > .row > p{display:none;}
+.neurofeed_body_section4 .neurofeed_body_section4_content{background:#d2d2d2 url("../images/neurofeed_body_img2.png") no-repeat top left; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.neurofeed_body_section4 .neurofeed_body_section4_content > p{display:none;}
+.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block{width: 460px; margin: 0 0px 0 45px;}
+.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #fff; margin: 10px 0;}
+.neurofeed_body_section4 .neurofeed_body_section4_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+/*-----------------------------------------------end-neurofeedbacktherapy-------------------------------------------------*/
+
+/*-----------------------------------------------subtanceabuse------------------------------------------------------*/
+
+.subtan_wrapper{padding: 0px;}
+.subtan_wrapper .subtan_wrapper_banner{margin-top: -103px; background: url("../images/subtan_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.subtan_body_wrapper{padding: 0px;}
+.subtan_body_wrapper > .row > p{display:none;}
+.subtan_body_wrapper .subtan_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.subtan_body_wrapper .subtan_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/subtan_body_icon1.png") no-repeat left top; padding-left: 72px; line-height: 49px;}
+.subtan_body_wrapper .subtan_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding: 0px;}
+.subtan_body_wrapper .subtan_body_wrapper_section > p:last-child{display:none;}
+
+.subtan_body_section1{padding: 0px;}
+.subtan_body_section1 > .row > p{display:none;}
+.subtan_body_section1 > .row > .subtan_body_section1_right_col > p{display:none;}
+.subtan_body_section1 .subtan_body_section1_left{padding-left: 0px;}
+.subtan_body_section1 .subtan_body_section1_left img{border: 3px solid #9aca42; width: 100%;}
+.subtan_body_section1 .subtan_body_section1_right{border-left: 2px solid #9aca42; padding-left: 20px;}
+.subtan_body_section1 .subtan_body_section1_right h2{font-family: Arial; font-size: 18px; color: #151515; text-transform: uppercase; margin: 0px;}
+.subtan_body_section1 .subtan_body_section1_right h1{font-family: Arial; font-size: 35px; color: #3d454a; text-transform: uppercase; margin: 9px 0; font-weight: bold;}
+.subtan_body_section1 .subtan_body_section1_right p{font-family: Arial; font-size: 14px; color: #3d454a; margin: 0 0 8px 0; padding-left: 0px; line-height: 18px;}
+.subtan_body_section1 .subtan_body_section1_right li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px; padding-bottom: 1px;}
+.subtan_body_section1 .subtan_body_section1_right li > br{display:none;}
+
+
+
+
+.subtan_body_section3{padding: 0px; margin: 0px auto; margin-bottom:20px;}
+.subtan_body_section3 .subtan_body_section3_content{background:#9aca42 url("../images/subtan_body_img2.png") no-repeat top left; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.subtan_body_section3 .subtan_body_section3_content > p{display:none;}
+.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block{width: 460px; margin: 0 45px 0 0px; float: right;}
+.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.subtan_body_section3 .subtan_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-subtanceabuse-------------------------------------------------*/
+
+/*-----------------------------------------------cbrs------------------------------------------------------*/
+
+.cbrs_wrapper{padding: 0px;}
+.cbrs_wrapper .cbrs_wrapper_banner{margin-top: -103px; background: url("../images/cbrs_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.cbrs_body_wrapper{padding: 0px;}
+.cbrs_body_wrapper > .row > p{display:none;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/cbrs_body_icon1.png") no-repeat left top; padding-left: 60px; line-height: 49px;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section h1 span{font-family: Arial; font-size: 14px; font-weight: bold; color: #282b2d; text-transform: uppercase; letter-spacing: 0px;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section h2{font-family: Arial; font-size: 20px; color: #3d454a; line-height: 24px; margin: 12px 0 0 0;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding-left: 0px;}
+.cbrs_body_wrapper .cbrs_body_wrapper_section > p:last-child{display:none;}
+
+.cbrs_body_section1{padding: 0px;}
+.cbrs_body_section1 > .row > p{display:none;}
+.cbrs_body_section1 .cbrs_body_section1_left{padding-left: 0px;}
+.cbrs_body_section1 .cbrs_body_section1_left h1{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.cbrs_body_section1 .cbrs_body_section1_left p{font-family: Arial; font-size: 14px; color: #151515; margin: 0; padding-left: 0px;}
+.cbrs_body_section1 .cbrs_body_section1_left .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.cbrs_body_section1 .cbrs_body_section1_left li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.cbrs_body_section1 .cbrs_body_section1_left li > br{display:none;}
+
+
+.cbrs_body_section1_right{background:#a8bccf url("../images/cbrs_body_img1.png") no-repeat top center; border: 3px solid #9aca42; padding-top: 50px; padding-left: 0px;}
+.cbrs_body_section1_right > p{display:none;}
+.cbrs_body_section1_right .cbrs_body_section1_right_content{background: #9aca42; width: 530px; margin-top: 112px; padding: 16px;}
+.cbrs_body_section1_right .cbrs_body_section1_right_content > p:last-child{display:none;}
+.cbrs_body_section1_right h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px 0 10px 0; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px; text-transform: lowercase;}
+.cbrs_body_section1_right p{font-family: Arial; font-size: 18px; color: #3d454a; line-height: 22px; padding-left: 0px;}
+.cbrs_body_section1_right p > br{display:none;}
+
+.cbrs_body_section2{padding: 0px;}
+.cbrs_body_section2 > .row > p{display:none;}
+.cbrs_body_section2 .cbrs_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin:5px 0;}
+
+.cbrs_body_section3{padding: 0px; margin: 20px auto;}
+.cbrs_body_section3 > .row > p{display:none;}
+.cbrs_body_section3 .cbrs_body_section3_content{background:#9aca42 url("../images/cbrs_body_img2.png") no-repeat top left; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.cbrs_body_section3 .cbrs_body_section3_content > p{display:none;}
+.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block{width: 460px; margin: 0 60px 0 0px; float: right;}
+.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.cbrs_body_section3 .cbrs_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-cbrs-------------------------------------------------*/
+
+/*-----------------------------------------------supportliving------------------------------------------------------*/
+
+.supportliving_wrapper{padding: 0px;}
+.supportliving_wrapper .supportliving_wrapper_banner{margin-top: -103px; background: url("../images/supportliving_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.supportliving_body_wrapper{padding: 0px;}
+.supportliving_body_wrapper > .row > p{display:none;}
+.supportliving_body_wrapper .supportliving_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.supportliving_body_wrapper .supportliving_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/supportliving_body_icon1.png") no-repeat left center; padding-left: 78px; line-height: 50px;}
+.supportliving_body_wrapper .supportliving_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding-left: 0px;}
+.supportliving_body_wrapper .supportliving_body_wrapper_section > p:last-child{display:none;}
+
+.supportliving_body_section1{padding: 0px;}
+.supportliving_body_section1 > .row > p{display:none;}
+.supportliving_body_section1 .supportliving_body_section1_left{padding-left: 0px;}
+.supportliving_body_section1 .supportliving_body_section1_left > p{display:none;}
+.supportliving_body_section1_left_content{background: url("../images/supportliving_body_img1.png") no-repeat left center; border: 3px solid #9aca42;}
+.supportliving_sec1_left_content{width: 532px; float: right; background: #9aca42; padding: 18px; margin-top: 186px;}
+.supportliving_sec1_left_content h1{color: #fff; font-family: "SingaporeSlingBold-Regular";	font-size: 38px; line-height: 32px;	margin: 0 0 6px 0; text-shadow: 0 0 4px rgba(0, 0, 0, 0.4); text-transform: lowercase;}
+.supportliving_body_section1_left_content > p{display:none;}
+.supportliving_sec1_left_content > p{display:none;}
+.supportliving_sec1_left_content h2{font-family: Arial; font-size: 14px; color: #373838; margin: 0px; line-height: 18px;}
+
+.supportliving_body_section1 .supportliving_body_section1_right{padding-left: 30px;}
+.supportliving_body_section1 .supportliving_body_section1_right h1{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.supportliving_body_section1 .supportliving_body_section1_right p{font-family: Arial; font-size: 14px; color: #151515; margin: 0; padding-left: 0px;}
+.supportliving_body_section1 .supportliving_body_section1_right .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.supportliving_body_section1 .supportliving_body_section1_right li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.supportliving_body_section1 .supportliving_body_section1_right li > br{display:none;}
+
+.supportliving_body_section2{padding: 0px;}
+.supportliving_body_section2 > .row > p{display:none;}
+.supportliving_body_section2 .supportliving_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin:10px 0;}
+.supportliving_body_section2 .supportliving_body_section2_content > p{display:none;}
+
+.supportliving_body_section3{padding: 0px;}
+.supportliving_body_section3 > .row > p{display:none;}
+.supportliving_body_section3 .supportliving_body_section3_content{background:#9aca42 url("../images/supportliving_body_img2.png") no-repeat top right; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.supportliving_body_section3 .supportliving_body_section3_content > p{display:none;}
+.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block{width: 460px; margin: 0 0 0 22px;}
+.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.supportliving_body_section3 .supportliving_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-supportliving-------------------------------------------------*/
+
+/*-----------------------------------------------professional------------------------------------------------------*/
+
+.professional_wrapper{padding: 0px;}
+.professional_wrapper .professional_wrapper_banner{margin-top: -103px; background: url("../images/professional_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.professional_body_wrapper{padding: 0px;}
+.professional_body_wrapper > .row > p{display:none;}
+.professional_body_wrapper .professional_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.professional_body_wrapper .professional_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/professional_body_icon1.png") no-repeat left top; padding-left: 72px; line-height: 52px;}
+.professional_body_wrapper .professional_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding: 0px;}
+.professional_body_wrapper .professional_body_wrapper_section > p:last-child{display:none;}
+
+.professional_body_main{padding: 0px;}
+.professional_body_main > .row > p{display:none;}
+.professional_body_main_col{padding: 0px;}
+.professional_body_main_col > p{display:none;}
+
+.professional_body_sec1{background: #a2ca29; padding: 10px; padding-bottom: 9px;}
+.professional_body_sec1 > p{display:none;}
+.professional_body_img1{width: 100%; margin-bottom: 8px;}
+.professional_body_sec1_left{width: 65%; float: left; height: 342px;}
+.professional_body_sec1_left img{width: 100%; height: 100%;}
+.professional_body_sec1_right{width: 35%; float: left; height: 342px; background:#fff; text-align: center;}
+.professional_body_sec1_right img{margin-top: 26%;}
+
+.professional_body_sec2{background: #4dc0c2; padding: 10px; padding-top: 0px;}
+.professional_body_sec2 > p{display:none;}
+.professional_body_sec2_top{width: 100%; height: 270px;}
+.professional_body_sec2_top > p{display:none;}
+.professional_body_sec2_left{width: 35%; float: left; height: 100%;}
+.professional_body_sec2_left img{width: 100%; height: 100%;}
+.professional_body_sec2_right{width: 65%; float: left; height: 100%;}
+.professional_body_sec2_right img{width: 100%; height: 100%;}
+
+.professional_body_sec2_top2{height: 270px; margin-bottom: 8px;}
+.professional_body_sec2_top2 > p{display:none;}
+.professional_body_sec2_top2_left{height: 100%; background: #fff; width: 35%; float: left; padding: 65px 0; text-align: center;}
+.professional_body_sec2_top2_left > p{display:none;}
+.professional_body_sec2_top2_left h3{font-family:'MyriadPro-Regular'; font-size: 14px; color: #2a2a29; line-height: 24px; margin: 20px auto; width: 80%;}
+.professional_body_sec2_top2_right{width: 65%; float: left; background: #a2ca29; height: 100%;}
+.professional_body_sec2_top2_right > p{display:none;}
+.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img{width: 50%; float: left; padding: 74px 20px;}
+.professional_body_sec2_top2_right .professional_body_sec2_top2_right_img img{width: 100%;}
+.professional_body_sec2_top2_right h2{width: 50%; float: left; margin: 0px; padding: 100px 36px 0 0; font-family:'MyriadPro-Regular'; font-size: 18px; line-height: 24px; color: #161616;}
+
+.professional_body_sec2_block3{width: 100%; height: 270px;}
+.professional_body_sec2_block3 > br{display:none;}
+.professional_body_sec2_block3 > p{display:none;}
+.professional_body_sec2_block3 .professional_body_sec2_block3_left{width: 65%; float: left; height: 100%;}
+.professional_body_sec2_block3 .professional_body_sec2_block3_right{width: 35%; float: left; height: 100%;}
+
+.professional_body_sec2_block4{width: 100%; height: 270px;}
+.professional_body_sec2_block4 > p{display:none;}
+.professional_body_sec2_block4 .professional_body_sec2_block4_left{background: #fff; float: left; width: 65%; text-align: center; padding: 17px 18px; height: 100%;}
+.professional_body_sec2_block4 .professional_body_sec2_block4_left > p{display:none;}
+.professional_body_sec2_block4 .professional_body_sec2_block4_left h3{font-family:'MyriadPro-Regular'; font-size: 18px; line-height: 30px; color: #252525; margin: 20px 0 0 0;}
+.professional_body_sec2_block4 .professional_body_sec2_block4_right{width: 35%; float: left; height: 100%;}
+.professional_body_sec2_block4 .professional_body_sec2_block4_right img{width: 100%; height: 100%;}
+/*-----------------------------------------------end-professional-------------------------------------------------*/
+
+/*-----------------------------------------------charity------------------------------------------------------*/
+
+.charity_wrapper{padding: 0px;}
+.charity_wrapper .charity_wrapper_banner{margin-top: -103px; background: url("../images/charity_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.charity_body_wrapper{padding: 0px;}
+.charity_body_wrapper > .row > p{display:none;}
+.charity_body_wrapper .charity_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.charity_body_wrapper .charity_body_wrapper_section > p:last-child{display:none;}
+.charity_body_wrapper .charity_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/charity_body_icon1.png") no-repeat left top; padding-left: 72px; line-height: 52px;}
+.charity_body_wrapper .charity_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding: 0px;}
+
+.charity_body_main{padding: 0px;}
+.charity_body_main > .row > p{display:none;}
+.charity_body_main_col{padding: 0px;}
+.charity_body_main_col > p{display:none;}
+
+.charity_body_sec1{background: #a2ca29; padding: 10px; padding-bottom: 2px;}
+.charity_body_sec1 > p{display:none;}
+.charity_body_img1{margin-top: -29px; width: 100%; border-bottom: 2px solid #a2ca29;}
+.charity_body_sec1_left{width: 35%; float: left; background: #fff; text-align: center; padding-top: 7%; height: 344px;}
+.charity_body_sec1_left > p{display:none;}
+.charity_body_sec1_left img{width: auto; margin-bottom: 15px;}
+.charity_body_sec1_left h3{font-family:'MyriadPro-Regular'; font-size: 16px; color: #262525; line-height: 24px; margin: 0px;}
+.charity_body_sec1_left h3 span{display: block;}
+.charity_body_sec1_right{float: left; width: 65%; height: 344px;}
+.charity_body_sec1_right img{width: 100%; height: 100%;}
+
+.charity_body_sec2{background: #4dc0c2; padding: 0 10px 0 10px;}
+.charity_body_sec2 > p{display:none;}
+.charity_body_sec2_top{padding-bottom: 2px;}
+.charity_body_sec2_top > p{display:none;}
+.charity_body_sec2_left{width: 65%; float: left; height: 342px;}
+.charity_body_sec2_left img{width: 100%; height: 100%;}
+.charity_body_sec2_right{width: 35%; float: left; background: #fff; text-align: center; height: 342px; padding-top: 7%;}
+.charity_body_sec2_middle{height: 264px; width: 100%;}
+.charity_body_sec2_middle > br{display:none;}
+.charity_body_sec2_middle > p{display:none;}
+.charity_body_sec2_middle_img1{float: left; width: 65%; height: 100%;}
+.charity_body_sec2_middle_img2{float: left; width: 35%; height: 100%;}
+.charity_body_sec2_bottom{height: 270px; width: 100%; padding-bottom: 2px;}
+.charity_body_sec2_bottom > p{display:none;}
+.charity_body_sec2_bottom_left{width: 65%; float: left; text-align: center; background: #fff; height: 100%;}
+.charity_body_sec2_bottom_left > p{display:none;}
+.charity_body_sec2_bottom_left img{margin: 10px auto; display: block;}
+.charity_body_sec2_bottom_left h3{font-family:'MyriadPro-Regular'; font-size: 14px; color: #252525; line-height: 30px; margin: 0px;}
+.charity_body_sec2_bottom_right{width: 35%; float: left; background: #a2ca29; padding: 52px; height: 100%;}
+.charity_body_sec2_bottom_right > p{display:none;}
+.charity_body_sec2_bottom_right h3{font-family:'MyriadPro-Regular'; font-size: 14px; color: #262525; line-height: 30px; margin: 0px;}
+
+.charity_body_sec3{background: #a2ca29; padding: 10px; padding-top: 0px;}
+.charity_body_sec3 > p{display:none;}
+.charity_body_sec3_top{width: 100%; height: 342px;}
+.charity_body_sec3_top > p{display:none;}
+.charity_body_img6{float: left; width: 65%; height: 100%;}
+.charity_body_sec3_top_right{width: 35%; height: 100%; background: #fff; float: left; text-align: center; padding: 28px;}
+.charity_body_sec3_top_right > p{display:none;}
+.charity_body_sec3_top_right img{margin: 15px auto;}
+.charity_body_sec3_top_right h3{font-family:'MyriadPro-Regular'; font-size: 14px; color: #252525; line-height: 30px; margin: 0px;}
+.charity_body_sec3_bottom{background:#fff url("../images/charity_body_img7.png") no-repeat top right; padding: 13px 18px 9px 18px; margin-top: 2px;}
+.charity_body_sec3_bottom > p{display:none;}
+.charity_freemedimg{display: inline-block; float: left; margin: 30px 60px 0px 60px;}
+.charity_body_sec3_bottom_text{display: inline-block; width: 314px; text-align: center; font-family:'MyriadPro-Regular'; font-size: 14px; color: #252525; line-height: 30px; float: left;}
+/*-----------------------------------------------end-charity-------------------------------------------------*/
+
+/*-----------------------------------------------casemanagement------------------------------------------------------*/
+
+.case_wrapper{padding: 0px;}
+.case_wrapper .case_wrapper_banner{margin-top: -103px; background: url("../images/case_banner.png") no-repeat top center; background-size: cover; position: relative; height: 509px;}
+
+.case_body_wrapper{padding: 0px;}
+.case_body_wrapper > .row > p{display:none;}
+.case_body_wrapper .case_body_wrapper_section{padding: 0px; position: relative; margin-top: -48px;}
+.case_body_wrapper .case_body_wrapper_section h1{margin: 0px; font-family: Arial; font-size: 30px; color: #3d454a; font-weight: bold; text-transform: uppercase; letter-spacing: 3px; background: url("../images/case_body_icon1.png") no-repeat left top; padding-left: 72px; line-height: 49px;}
+.case_body_wrapper .case_body_wrapper_section p{margin: 15px 0 15px 0; font-family: Arial; font-size: 14px; color: #3d454a; font-weight: normal; line-height: 18px; padding: 0px;}
+.case_body_wrapper .case_body_wrapper_section > p:last-child{display:none;}
+
+.case_body_section1{padding: 0px;}
+.case_body_section1 > .row > p{display:none;}
+.case_body_section1 .case_body_section1_left{padding-left: 0px;}
+.case_body_section1 .case_body_section1_left h1{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0; text-transform: uppercase;
+	font-weight: bold;}
+.case_body_section1 .case_body_section1_left p{font-family: Arial; font-size: 14px; color: #151515; margin: 0; padding-left: 0px;}
+.case_body_section1 .case_body_section1_left .counselling_body_line{background: #9aca42; height: 1px; width: 196px; margin: 5px 0 12px 0;}
+.case_body_section1 .case_body_section1_left li{font-family: Arial; font-size: 17px; color: #3d454a; margin: 0px 0 12px 0; font-weight: bold; background: url("../images/psychiatry_body_icon2.png") no-repeat left top 1px; padding-left: 34px;}
+.case_body_section1 .case_body_section1_left li > br{display:none;}
+
+.case_body_section1_right_col > p{display:none;}
+.case_body_section1_right{background:#a8bccf url("../images/case_body_img1.png") no-repeat top center; border: 3px solid #9aca42; padding-top: 168px; padding-right: 0px;}
+.case_body_section1_right > p{display:none;}
+.case_body_section1_right .case_body_section1_right_content{background: #9aca42; width: 532px; float: right; padding: 20px;}
+.case_body_section1_right h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px 0 10px 0; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px; text-transform: lowercase;}
+.case_body_section1_right .case_body_section1_right_content p{font-family: Arial; font-size: 14px; color: #373838; line-height: 18px; padding-left: 0px;}
+.case_body_section1_right .case_body_section1_right_content > p:last-child{display:none;}
+.case_body_section1_right .case_body_section1_right_content > p > br{display:none;}
+
+.case_body_section2{padding: 0px;}
+.case_body_section2 > .row > p{display:none;}
+.case_body_section2 .case_body_section2_content{padding: 0px; font-family: Arial; font-size: 14px; color: #3d454a; line-height: 18px; margin: 20px 0 0px 0;}
+.case_body_section2 .case_body_section2_content > p{display:none;}
+
+.case_body_section3{padding: 0px; margin: 20px auto;}
+.case_body_section3 > .row > p{display:none;}
+.case_body_section3 .case_body_section3_content{background:#9aca42 url("../images/case_body_img2.png") no-repeat top right; padding: 0px; border: 1px solid #d7d9d1; padding: 20px 0 19px 0;}
+.case_body_section3 .case_body_section3_content > p{display:none;}
+.case_body_section3 .case_body_section3_content .supportliving_book_block{width: 460px; margin: 0 0px 0 45px;}
+.case_body_section3 .case_body_section3_content .supportliving_book_block h1{font-family:'SingaporeSlingBold-Regular'; font-size: 38px; color: #fff; margin: 0px; text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); line-height: 32px;}
+.case_body_section3 .case_body_section3_content .supportliving_book_block h2{font-family:Arial; font-size: 18px; color: #15191c; margin: 10px 0;}
+.case_body_section3 .case_body_section3_content .supportliving_book_block .counselling_bookbtn{background: #2e6e03; font-family: Arial; font-size: 18px; color: #fff; font-weight: bold; letter-spacing: 1px; padding: 12px 20px; margin: 10px 0; border-radius: 2px; display: block; width: 156px; text-align: center;}
+
+/*-----------------------------------------------end-casemanagement-------------------------------------------------*/
