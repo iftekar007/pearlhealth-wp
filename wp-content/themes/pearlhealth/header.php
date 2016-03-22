@@ -20,9 +20,9 @@
                     </div>
                     <div class="col-lg-3 col-md-3  col-sm-4 col-xs-12 header_top_block_right">
                         <div class="icon_content">
-                            <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
-                            <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
-                            <a href="javascript:void(0);" class="book_appobtn"><strong>+</strong>Book appointment</a>
+                            <a href="https://www.facebook.com/PearlHealthClinic/?ref=bookmarks"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
+                            <a href="https://mobile.twitter.com/pearl_health"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
+                            <a href="/#home_appoinment_block" class="book_appobtn"><strong>+</strong>Book appointment</a>
                         </div>
                     </div>
                 </div>

@@ -37,7 +37,7 @@ function tmm_register_group_metabox() {
             ));
 
             $main_group->add_group_field( $tmm_group, array(
-                'name' => __( 'Firstname', 'team-members' ),
+                'name' => __( 'Name', 'team-members' ),
                 'id' => $prefix . 'firstname',
                 'type' => 'text',
                 'row_classes' => 'de_first de_twentyfive de_text de_input',
@@ -45,7 +45,7 @@ function tmm_register_group_metabox() {
             ));
 
             $main_group->add_group_field( $tmm_group, array(
-                'name' => __( 'Lastname', 'team-members' ),
+                'name' => __( 'Department', 'team-members' ),
                 'id' => $prefix . 'lastname',
                 'type' => 'text',
                 'row_classes' => 'de_twentyfive de_text de_input',
@@ -53,7 +53,7 @@ function tmm_register_group_metabox() {
             ));
 
             $main_group->add_group_field( $tmm_group, array(
-                'name' => __( 'Job/role', 'team-members' ),
+                'name' => __( 'Specialist', 'team-members' ),
                 'id' => $prefix . 'job',
                 'type' => 'text',
                 'row_classes' => 'de_fifty de_text de_input',

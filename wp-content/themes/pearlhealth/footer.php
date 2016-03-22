@@ -65,21 +65,21 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot_main_section_content">
                         <h1>SITE MAP</h1>
                         <ul class="footer_menu_block">
-                            <li><a href="javascript:void(0);">Home</a> </li>
-                            <li><a href="javascript:void(0);">About Pearl Health</a> </li>
-                            <li><a href="javascript:void(0);">Our Service</a> </li>
-                            <li><a href="javascript:void(0);">Affiliates</a> </li>
-                            <li><a href="javascript:void(0);">Planning Your Visit</a> </li>
-                            <li><a href="javascript:void(0);">News</a> </li>
-                            <li><a href="javascript:void(0);">Community Events</a> </li>
-                            <li><a href="javascript:void(0);">Patient's Portal</a> </li>
+                            <li><a href="/home">Home</a> </li>
+                            <li><a href="/about-pearl-health">About Pearl Health</a> </li>
+                            <li><a href="/our-services">Our Service</a> </li>
+                            <li><a href="/affiliates/other-professionals">Affiliates</a> </li>
+                            <li><a href="/planning-your-visit">Planning Your Visit</a> </li>
+                            <li><a href="/news">News</a> </li>
+                            <li><a href="/upcoming-events">Community Events</a> </li>
+                            <li><a href="https://mycw12.eclinicalweb.com/portal526/jsp/100mp/login.jsp">Patient's Portal</a> </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot_main_section_content">
                         <div class="foot_main_section_content_last">
                             <div class="foot_social_icon_div">
-                                <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
-                                <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
+                                <a href="https://www.facebook.com/PearlHealthClinic/?ref=bookmarks"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
+                                <a href="https://mobile.twitter.com/pearl_health"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
                                 <a href="javascript:void(0);" class="update_text">Keep Updated</a>
                             </div>
                             <div class="input_address_div">
