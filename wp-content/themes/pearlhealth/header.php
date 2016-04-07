@@ -16,13 +16,15 @@
             <div class="container pearl_body_container">
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 header_top_block_left">
-                        <p>Our message is simple: You are not alone and there is help.</p>
+                        <!--<p>Our message is simple: You are not alone and there is help.</p>-->
+                        
+                        <p>"A bruised reed He will not break, and the smoldering wick, He will not putout; He will faithfully bring forth justice from truth" - Isaiah 42:3</p>
                     </div>
                     <div class="col-lg-3 col-md-3  col-sm-4 col-xs-12 header_top_block_right">
                         <div class="icon_content">
                             <a href="https://www.facebook.com/PearlHealthClinic/?ref=bookmarks"><img src="<?php echo get_template_directory_uri(); ?>/images/fb_icon.png"></a>
                             <a href="https://mobile.twitter.com/pearl_health"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
-                            <a href="/#home_appoinment_block" class="book_appobtn"><strong>+</strong>Book appointment</a>
+                            <a href="/#home_appoinment_block" class="book_appobtn"><strong style="font-size:16px;">+</strong>Book appointment</a>
                         </div>
                     </div>
                 </div>

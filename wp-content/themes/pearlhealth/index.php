@@ -72,7 +72,7 @@
                             <h1><?php echo $val->banner_title ; ?></h1>
                             <h2><?php echo $val->banner_title2 ; ?></h2>
                             <p><?php echo $val->banner_desc ; ?> </p>
-                            <a href="<?php echo $val->banner_link ; ?>" class="bannar_btn">Learn More</a>
+                            <?php if(strlen($val->banner_link)>2) { ?><a href="<?php echo $val->banner_link ; ?>" class="bannar_btn">Learn More</a> <?php  } ?>
                         </div>
                     </div>
                 </div>

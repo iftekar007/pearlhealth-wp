@@ -64,21 +64,21 @@ $upload_dir = wp_upload_dir();
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_title' ] ) == '' ) {
                     $banner_title = '';
 
-                    $errors[] = 'banner_title';
+                   // $errors[] = 'banner_title';
                 } else {
                     $banner_title = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_title' ] ) );
                 }
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_title2' ] ) == '' ) {
                     $banner_title2 = '';
 
-                    $errors[] = 'banner_title2';
+                    //$errors[] = 'banner_title2';
                 } else {
                     $banner_title2 = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_title2' ] ) );
                 }
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_desc' ] ) == '' ) {
                     $banner_desc = '';
 
-                    $errors[] = 'banner_desc';
+                   // $errors[] = 'banner_desc';
                 } else {
                     $banner_desc = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_desc' ] ) );
                 }
@@ -391,7 +391,7 @@ $upload_dir = wp_upload_dir();
                 $available_formats = array( 'jpg', 'jpeg', 'gif', 'png', 'swf' );
 
                 if ( ! in_array( strtolower( $banner_type ), $available_formats ) ) {
-                    $errors[] = 'banner_type';
+                    //$errors[] = 'banner_type';
                 }
 
                 $banner_tmp_file = $_FILES[ $ubm_plugin_prefix . 'banner_file' ]['tmp_name'];
@@ -399,21 +399,21 @@ $upload_dir = wp_upload_dir();
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_title' ] ) == '' ) {
                     $banner_title = '';
 
-                    $errors[] = 'banner_title';
+                    //$errors[] = 'banner_title';
                 } else {
                     $banner_title = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_title' ] ) );
                 }
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_title2' ] ) == '' ) {
                     $banner_title2 = '';
 
-                    $errors[] = 'banner_title2';
+                   // $errors[] = 'banner_title2';
                 } else {
                     $banner_title2 = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_title2' ] ) );
                 }
                 if ( trim( $_POST[ $ubm_plugin_prefix . 'banner_desc' ] ) == '' ) {
                     $banner_desc = '';
 
-                    $errors[] = 'banner_desc';
+                    //$errors[] = 'banner_desc';
                 } else {
                     $banner_desc = esc_attr( stripslashes( $_POST[ $ubm_plugin_prefix . 'banner_desc' ] ) );
                 }

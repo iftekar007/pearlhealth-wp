@@ -1,3 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
 
 @media screen and (max-width:1920px) {
 	.visit_wrapper .visit_body_block_top{padding-bottom: 108px;}
@@ -5,6 +7,9 @@
 	.upcoming_event_wrapper .upcoming_event_wrapper_banner .upcoming_events_banner_cut2{width: 	49%; left: 51%;}
 	.upcoming_event_banner_bottom{position: absolute; bottom: -6px; left: 51%; background:#989999; width: 49%; height: 6px; border-left: 10px solid #fff; border-top: 6px solid transparent;}
 	.supportliving_body_wrapper .supportliving_body_wrapper_section h1{font-size:27px;}
+	
+	
+	.upcoming_news_wrapper .upcoming_event_wrapper_banner .upcoming_events_banner_cut2{width: 	49%; left: 51%;}
 }
 @media screen and (max-width:1900px) {
 
@@ -123,7 +128,9 @@
 	.specialist_bottom{padding: 0 15px; width:100%;}
 	.specialist_bottom .specialist_bottom_btn{padding-right: 15px;}
 	.specialist_bottom .specialist_bottom_btn .home_block3_learnbtn{width: 100%;}
-	.home_appoinment_block{width: 100%; padding: 0 15px 45px 15px;}
+	.home_appoinment_block{width: 100%; padding: 0 15px 0 15px;}
+	
+	.pearl_home_body_heading2{ height:auto!important;}
 
 	.upcoming_event_body_wrapper{padding: 0 15px;}
 	.upcoming_event_body_wrapper .upcoming_event_body_wrapper_section{padding: 0 15px;}
@@ -155,14 +162,22 @@
 	.counselling_wrapper{padding: 0px 15px;}
 	.counselling_body_section1{padding: 0px 15px;}
 	.counselling_body_section1 .counselling_body_section1_left{padding: 0px 15px;}
+
 	.counselling_body_section2{padding: 0px 15px;}
 	.counselling_body_section2 .counselling_body_section2_content{padding: 0px 15px;}
+        .counselling_body_section1 .counselling_body_section1_left h1{font-size:32px;}
 	.counselling_body_section3{padding: 0px 15px;}
 	.counselling_body_section3 .counselling_body_section3_content{width: 98%; margin: 0 auto; display: block; float: none;}
 	
 	/*-----------------------------------------------subtanceabuse------------------------------------------------------*/
 	.subtan_body_section2{padding:0 15px;}
 	.subtan_body_section2 .subtan_body_section2_content{padding:0 15px;}
+	
+	/*---------------------family-medicine----------------------*/
+	
+	.familymedicine_body_gellary .familymedicine_body_gellary_left{padding-left:15px;}
+
+	.familymedicine_body_gellary_left_content p{margin-left:234px; margin-top:168px;}
 
 }
 
@@ -186,21 +201,21 @@
 	.pearl_body_container{width: inherit; padding: 0 15px;}
 
 
-	.foot_main_section .foot_main_section_content{padding: 0 15px; float: none; width: 50%; margin:0 auto; display: block;}
+	.foot_main_section .foot_main_section_content{padding: 0!important; float: none; width: 100%; margin:0 auto; display: block;}
 	.foot_main_section .foot_main_section_content h1{text-align: center; background: url("../images/sidemap_line.png") no-repeat center bottom;}
 	.foot_main_section .foot_main_section_content img{margin: 0 auto; display: block;}
 	.foot_main_section .foot_main_section_content:first-child{padding-left: 15px;}
 	.foot_main_section .foot_main_section_content .hour_block .hour_block_left{width: 100%; display: block; text-align: center; float: none;}
 	.foot_main_section .foot_main_section_content .hour_block .hour_block_right{width: 100%; float: none; display: block;}
-	.foot_main_section .foot_main_section_content:nth-child(2){padding: 0 15px; width:50%; margin:0 auto;}
+	.foot_main_section .foot_main_section_content:nth-child(2){padding: 0; width:100%; margin:0 auto;}
 	.foot_main_section .foot_main_section_content .footer_menu_block li{float: none; width: 100%; display: block; text-align: center;}
-	.foot_main_section .foot_main_section_content .hour_block{width: 50%; margin:30px auto;}
+	.foot_main_section .foot_main_section_content .hour_block{width: 100%; margin:30px auto;}
 	.foot_main_section .foot_main_section_content .footer_menu_block{width: 100%;}
 	.foot_main_section_content_last{width: 100%; float: none; text-align: center; margin-top: 50px;}
 	.foot_main_section .foot_main_section_content .foot_social_icon_div a{height: 32px;}
 	.foot_main_section .foot_main_section_content .foot_social_icon_div a.update_text{vertical-align: top;}
 
-	.home_block1 .home_block1_section .home_block1_section_inner{height: 222px;}
+	.home_block1 .home_block1_section .home_block1_section_inner{height: 256px;}
 
 	.home_block2 .home_block2_left{padding: 0 15px; float: none; margin: 15px auto; display: block; width: 465px;}
 	.home_block2 .home_block2_right{padding: 0 15px; float: none; margin: 0 auto; display: block; width: 100%;}
@@ -228,12 +243,14 @@
 		left: 82%;
 	}
 	
-	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content{background: #d3d3d3; padding: 40px; text-align: center;}
+	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content{background: #d3d3d3; padding: 40px; text-align: center; height:750px; }
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_imgblock{width: 100%;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_block_left{width: 100%; float: none; padding: 0px;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content h3 img{display: block; margin: 3px auto;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content h3 span{float: none; display: block; margin: 6px auto;}
 	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_block_right{width: 100%; float: none;}
+	
+	.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content h3 span.evdate{display:block; float:none;}
 
 
 	.mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p .mission_body_gellary_imgblock{width: 50%;}
@@ -249,6 +266,11 @@
 	.psychiatry_body_section2 .psychiatry_body_section2_content{text-align: center;}
 	.psychiatry_body_section3 .psychiatry_body_section3_content{background: #8ab835; text-align: center; padding: 20px; width: 100%;}
 	.psychiatry_body_section3 .psychiatry_body_section3_content .psychiatry_bookbtn{display: block; margin: 10px auto;}
+	
+	
+	.familymedicine_body_gellary_left_content p{margin-left:101px; margin-top:168px;}
+
+        .counselling_body_section1 .counselling_body_section1_left h1{font-size:26px;}
 }
 
 @media screen and (max-width:1130px) {
@@ -371,26 +393,26 @@
 
 	.home_block1 .home_block1_section{float: none; width: 100%; text-align: center; border-right:none; padding: 0px 15px; margin: 0px; }
 	.home_block1 .home_block1_section .home_block1_section_inner{height: auto; }
-	.home_block1 .home_block1_section .home_block1_section_inner1{ background: url("../images/home_block1_img1.png") no-repeat center top; margin:20px 0 0 0px; padding:100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner2{ background: url("../images/home_block1_img2.png") no-repeat center top; margin:20px 0 0 0px; padding:100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner3{ background: url("../images/home_block1_img3.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner4{ background: url("../images/home_block1_img4.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner5{ background: url("../images/home_block1_img5.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner6{ background: url("../images/home_block1_img6.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner7{ background: url("../images/home_block1_img7.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner8{ background: url("../images/home_block1_img8.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section .home_block1_section_inner9{ background: url("../images/home_block1_img9.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner1{ background: url("../images/home_block1_img1.png") no-repeat center 10px; margin:20px 0 0 0px; padding:110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner2{ background: url("../images/home_block1_img2.png") no-repeat center 10px; margin:20px 0 0 0px; padding:110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner3{ background: url("../images/home_block1_img3.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner4{ background: url("../images/home_block1_img4.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner5{ background: url("../images/home_block1_img5.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner6{ background: url("../images/home_block1_img6.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner7{ background: url("../images/home_block1_img7.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner8{ background: url("../images/home_block1_img8.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section .home_block1_section_inner9{ background: url("../images/home_block1_img9.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
 
 
-	.home_block1 .home_block1_section:hover .home_block1_section_inner1{ background: url("../images/home_block1_img1_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner2{ background: url("../images/home_block1_img2_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner3{ background: url("../images/home_block1_img3_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner4{ background: url("../images/home_block1_img4_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner5{ background: url("../images/home_block1_img5_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner6{ background: url("../images/home_block1_img6_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner7{ background: url("../images/home_block1_img7_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner8{ background: url("../images/home_block1_img8_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
-	.home_block1 .home_block1_section:hover .home_block1_section_inner9{ background: url("../images/home_block1_img9_hover.png") no-repeat center top; margin:20px 0 0 0px; padding: 100px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner1{ background: url("../images/home_block1_img1_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner2{ background: url("../images/home_block1_img2_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner3{ background: url("../images/home_block1_img3_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner4{ background: url("../images/home_block1_img4_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner5{ background: url("../images/home_block1_img5_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner6{ background: url("../images/home_block1_img6_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner7{ background: url("../images/home_block1_img7_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner8{ background: url("../images/home_block1_img8_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
+	.home_block1 .home_block1_section:hover .home_block1_section_inner9{ background: url("../images/home_block1_img9_hover.png") no-repeat center 10px; margin:20px 0 0 0px; padding: 110px 0 20px 0;}
 
 
 	.home_specialist_block{text-align: center;}
@@ -403,8 +425,8 @@
 	.specialist_bottom .specialist_bottom_btn .home_block3_learnbtn{width: 204px; display: block; margin: 0 auto;}
 
 	.home_appoinment_block{background: #e7eae8;}
-	.home_appoinment_block .home_appoinment_block_content{float: none; padding: 30px 15px 0 15px;}
-	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form{float: none; margin: 30px auto;}
+	.home_appoinment_block .home_appoinment_block_content{float: none; padding: 30px 0 0 0;}
+	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form{float: none; margin: 0 auto;}
 
 	.services_wrapper{height: auto;}
 	.services_wrapper .services_body_block .services_body_block_content_top{height: auto;}
@@ -435,10 +457,10 @@
 
 	.upcoming_events_banner_cut{display: none;}
 
-	.mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p .mission_body_gellary_imgblock{display: block; float: none; margin: 10px auto; border: 5px solid #fff; width: 70%;}
+	.mission_body_gellary .mission_body_gellary_section .mission_body_gellary_content p .mission_body_gellary_imgblock{display: block; float: none; margin: 10px auto; width: 70%;}
 	.mission_body_gellary{text-align: center;}
 	.mission_body_bottom{text-align: center;}
-	.mission_body_bottom .mission_body_bottom_section p{background:url("../images/mission_body_icon2.png") no-repeat scroll top center; padding: 104px 0 0 0;}
+	.mission_body_bottom .mission_body_bottom_section p{background:url("../images/mission_body_icon2.png") no-repeat scroll top center; padding: 104px 0 0 0; height:auto;}
 
 	.contact_body_section .contact_body_section_map{margin-top: 0px;}
 	.contact_form_section_address{text-align: center; margin-bottom: 20px;}
@@ -446,17 +468,46 @@
 
 	.counselling_body_section1{margin: 0px auto;}
 	.counselling_body_section1 .counselling_body_section1_left{text-align: center;}
+        .counselling_body_section1 .counselling_body_section1_left h1{font-size:35px; line-height:36px;}
 	.counselling_body_section1 .counselling_body_section1_left .counselling_body_section1_left_content{border-left: 0px solid #9aca42; border-bottom: 2px solid #9aca42; padding-left: 0px; padding-bottom: 15px; margin-bottom: 15px;}
 	.counselling_body_section1 .counselling_body_section1_right{padding-left: 15px; text-align: center;}
 	.counselling_body_section1 .counselling_body_section1_right .counselling_body_line{margin: 10px auto; display: block;}
 	.counselling_body_section1 .counselling_body_section1_right li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 28px 0 0 0;}
 	.counselling_body_section2 .counselling_body_section2_content{text-align: center;}
 	.counselling_body_section3 .counselling_body_section3_content{width: 100%; background: #b7b7b7; text-align: center;}
-	.counselling_body_section3 .counselling_body_section3_content .counselling_book_block{width: 100%;}
+	.counselling_body_section3 .counselling_body_section3_content .counselling_book_block{width: 100%; margin:0 auto;}
 	.counselling_body_section3 .counselling_body_section3_content .counselling_book_block .counselling_bookbtn{display: block; margin: 10px auto;}
+	
+	
+	.eatdis_body_section1_right p > br{display:none;}
+	
+	.familymedicine_body_gellary_left_content p{margin-left:205px; margin-top:168px;}
+
+
+        .neurofeed_body_section1{margin-top:0px;}
+        .neurofeed_body_section1 .neurofeed_body_section1_right .neurofeed_body_section1_right_leftul{float:none; width:100%;}
+        .neurofeed_body_section1 .neurofeed_body_section1_right .neurofeed_body_section1_right_rightul{float:none; width:100%;}
+.neurofeed_body_section3_col .neurofeed_body_section3_left_content{width:550px;}
+.neurofeed_body_section3_col .neurofeed_body_section3_right_content{width:100%; text-align:center; float:none;}
+.neurofeed_body_section3_col .neurofeed_body_section3_right_content h2{margin:10px 0;}
+
+
+.neuro_body_section1 .neoro_body_section1_right{margin-top:0px;}
+.neuro_body_section1 .neoro_body_section1_right p{padding:0px 0 10px 0;}
 }
 
 @media screen and (max-width:767px) {
+
+
+
+.services_wrapper .services_body_block .services_body_block_content span{ width:auto;}
+ .services_body_block{ padding-bottom:25px;}
+ .services_wrapper .services_body_block .services_body_block_content_top {
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.career_body_wrapper2{ padding-left:10%; padding-right:10%;}
 
 
 	.header_top_block .header_top_block_left{text-align: center;}
@@ -476,6 +527,10 @@
 
 	.psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext1{position: inherit; top: 0px; bottom: 0px; left: 0px; right: 0px; width: 100%; text-align: center; display: block;}
 	.psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext2{position: inherit; top: 0px; bottom: 0px; left: 0px; right: 0px; width: 100%; text-align: center; display: block;}
+	
+	
+	.familymedicine_body_gellary_left_content{background:none; padding:10px;}
+	.familymedicine_body_gellary_left_content p{margin:0px; width:100%; text-align:center;}
 
 }
 
@@ -578,7 +633,7 @@
 	.home_block2 .home_block2_right .panel-default > .panel-heading .panel-title > a span{display: block; margin: 6px auto;}
 
 	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form{width: 100%;}
-	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form label{width: 100%; text-align: center; display: block; margin-bottom: 8px;}
+	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form label{width: 100%; text-align: left; display: block; margin-bottom: 8px;}
 	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form input{width: 100%; display: block;}
 	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form select{width: 100%; display: block;}
 	.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form textarea{width: 100%; display: block;}
@@ -589,7 +644,11 @@
 
 	.psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext1{font-size: 24px;}
 	.psychiatry_body_section1 .psychiatry_body_section1_left .contact_body_section1_left_imgblock .psychiatry_body_imgtext2{font-size: 18px;}
+	
+	.pearl_home_body_heading2{font-size: 36px !important;}
 }
+
+
 
 
 
@@ -760,7 +819,7 @@
 
 @media screen and (max-width:1920px) {
 
-	.gellary_body_wrapper .gellary_photo_text_block{margin-left: 12%;}
+	
 	.gellary_body_wrapper .gellary_video_text_block{margin-left: 12%;}
 
 }
@@ -778,19 +837,30 @@
 
 	/*------------gellary-----------*/
 
-	.gellary_body_wrapper .gellary_photo_text_block{margin-left: 4%;}
+
 	.gellary_body_wrapper .gellary_video_text_block{margin-left: 4%;}
 
 }
 @media screen and (max-width:1366px) {
 
-	.gellary_body_wrapper .gellary_photo_text_block{margin-left: 0%;}
-	.gellary_body_wrapper .gellary_video_text_block{margin-left: 0%;}
-}
-@media screen and (max-width:1359px) {
+.home_specialist_block .home_specialist_descblock{ height:218px;}
 
-	.gellary_body_wrapper .gellary_photo_text_block{margin: 0px auto; margin-top: 20px; width: 600px; text-align: center; background: url("../images/gellary_bodybg_img1.png") no-repeat top center; padding: 125px 0 0 0;}
-	.gellary_body_wrapper .gellary_video_text_block{margin: 0px auto; width: 600px; text-align: center; background: url("../images/gellary_bodybg_img2.png") no-repeat top center; padding: 110px 0 0 0;}
+
+	
+	.gellary_body_wrapper .gellary_video_text_block{margin-left: 0%;}
+	
+	.gellary_body_wrapper .gellary_video_text_block{ margin-left:40px;}
+}
+@media screen and (max-width:1199px) {
+
+
+	.gellary_body_wrapper .gellary_video_text_block{margin: 0px auto; width: 90%; text-align: center; background: url("../images/gellary_bodybg_img2.png") no-repeat top center; padding: 110px 0 0 0;}
+	
+	.gellary_body_wrapper .gellary_photo_text_block{ width: 100%; padding-left:5%!important; padding-right:5%!important; text-align:center;  background: url("../images/gallerybg2.png")  left top; margin:20px 0 20px 0;}
+	.gellaryphotomain{ margin-bottom:20px;}
+	.gellary_body_wrapper .gellary_photo_text_block p{ color:#fff;}
+	
+	.gellary_body_wrapper .gellary_photo_text_block h1{color:#fff;}
 }
 
 
@@ -818,14 +888,14 @@
 	.career_body_wrapper{padding: 0px 15px;}
 	.career_body_wrapper .career_body_wrapper_section{padding: 0px 15px;}
 	.career_body_gellary{padding: 0px 15px;}
-	.career_body_gellary .career_body_gellary_section{padding: 0px 15px;}
+	.career_body_gellary .career_body_gellary_section{padding: 0px 5px;}
 
 	/*-------------gellary----------*/
 
 	.gellary_body_photo_container{width: 100%;}
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 205px;}
-	.gellary_body_photo_block .gellary_body_photo_img img{width: 100%;}
+
+	
 	.gellary_body_video_container{width: 100%;}
 
 	.gellary_body_video_block .gellary_body_video_content{height: 205px;}
@@ -971,7 +1041,7 @@
 
 	/*-------------gellary----------*/
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 169px;}
+	
 	.gellary_body_video_block .gellary_body_video_content{height: 169px;}
 
 	/*-------------news-------------*/
@@ -1066,9 +1136,22 @@
 	.faq_wrapper {
 		margin-top: -184px;
 	}
-
+.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content .upcoming_event_body_gellary_imgblock{ height:auto;}
 }
 @media screen and (max-width:991px) {
+
+
+.gellaryphotomain .gellary_body_photo_block .gellary_body_photo_img{ background:none; padding:0!important; height: auto!important;}
+.gellaryphotomain .gellary_body_photo_block .gellary_body_photo_img img{height: auto!important;}
+.gellaryphotomain{ padding:20px;}
+.gellaryphotomain .glyphicon-chevron-left{ display:none;}
+.gellaryphotomain .glyphicon-chevron-right{ display:none;}
+
+.home_appoinment_block{ width:100%; margin:0 auto; padding:0 10px!important;}
+
+.home_appoinment_block_form{ overflow:hidden!important; width:100%; }
+
+
 
 	.staff_body_wrapper .staff_body_wrapper_section{margin: 15px auto; text-align: center; padding: 0 15px;}
 	.staff_body_wrapper .staff_body_wrapper_section h1{margin: 0; background: url("../images/staff_body_icon1.png") no-repeat top center; padding: 60px 0 0 0;}
@@ -1113,12 +1196,12 @@
 
 	.career_form_block .career_form_block_left{width: 100%; float: none;}
 	.career_form_block .career_form_block_left ul{padding-left: 0px;}
-	.career_form_block .career_form_block_left ul li{text-align: center; background: url("../images/career_body_liststyle.png") no-repeat top center; padding: 10px 0 0 0;}
+	.career_form_block .career_form_block_left ul li{text-align: center; background: url("../images/career_body_liststyle.png") no-repeat top center; padding: 10px 0 0 0; width:100%; float:none;}
 	.career_form_block .career_form_block_right{width: 100%; float: none;}
 	.career_form_block .career_form_block_right .career_form_section label{text-align: left; display: block;}
 	.career_form_block .career_form_block_right .career_form_section .career_input_left{width: 100%; float: none;}
 	.career_form_block .career_form_block_right .career_form_section .career_input_right{width: 100%; float: none;}
-	.career_form_block .career_form_block_right .career_form_section label{text-align: center;}
+	.career_form_block .career_form_block_right .career_form_section label{text-align: left;}
 	.career_form_block .career_form_block_right .career_submitbtn{display: block; float: none; margin: 20px auto;}
 	.career_form_block .career_form_block_right .resume_area{height: 110px; padding-top: 15px;}
 	.career_form_block .career_form_block_right .resume_area span{display: block;}
@@ -1128,8 +1211,7 @@
 
 	/*---------gellary---------*/
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 129px;}
-	.gellary_body_video_block .gellary_body_video_content{height: 129px;}
+
 
 	/*-----------news----------*/
 
@@ -1233,9 +1315,9 @@
 	.case_body_section1 .case_body_section1_left{float: none; width: 100%; text-align: center;}
 	.case_body_section1 .case_body_section1_left .counselling_body_line{display: block; margin: 10px auto;}
 	.case_body_section1 .case_body_section1_left li{background: url("../images/psychiatry_body_icon2.png") no-repeat center top; padding: 30px 0 0 0;}
-	.case_body_section1_right_col{padding: 0px;}
-	.case_body_section1_right{background: none; padding: 15px; text-align: center; width: 98%; margin: 0 auto;}
-	.case_body_section1_right .case_body_section1_right_content{float: none; width: 100%;}
+	.case_body_section1_right_col{padding: 0px; height:auto;}
+	.case_body_section1_right{background: none; padding: 15px; text-align: center; width: 98%; margin: 0 auto;   height: auto !important;}
+	.case_body_section1_right .case_body_section1_right_content{float: none; width: 100%; position:inherit; left:0; bottom:0;}
 	.case_body_section2 .case_body_section2_content{text-align: center;}
 
 	/*---------------subtanceabuse---------------------*/
@@ -1290,11 +1372,15 @@
 
 @media screen and (max-width:767px) {
 
-	.gellary_body_wrapper .gellary_photo_text_block{width: 90%;}
-	.gellary_body_wrapper .gellary_video_text_block{width: 90%;}
+.upcoming_event_body_gellary .upcoming_event_body_gellary_block_content{ height:auto;}
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 250px; width: 50%;}
-	.gellary_body_photo_block .gellary_body_photo_img img{width: 100%; height: 100%;}
+
+
+	
+	
+
+	
+
 	.gellary_body_video_block .gellary_body_video_content{height: 250px; width: 50%;}
 	.gellary_body_video_block .gellary_body_video_content iframe{width: 100%; height: 100%;}
 
@@ -1324,13 +1410,12 @@
 
 @media screen and (max-width:600px) {
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 200px; width: 50%;}
-	.gellary_body_photo_block .gellary_body_photo_img img{width: 100%; height: 100%;}
+
 	.gellary_body_video_block .gellary_body_video_content{height: 200px; width: 50%;}
 	.gellary_body_video_block .gellary_body_video_content iframe{width: 100%; height: 100%;}
 
 	/*--------neurofeedbacktherapy--------*/	
-	.neurofeed_body_section3_col .neurofeed_body_section3_left_content{background:none; width:100%; padding:10px;}
+	.neurofeed_body_section3_col .neurofeed_body_section3_left_content{ width:100%; padding:10px; background-size:cover; background-position:center top;}
 	.neurofeed_body_section3_left_content h2{width:100%; margin:0px; display:block; text-align:center; padding:30px 0;}
 	.neurofeed_body_section3_left_content h3{width:100%; margin:0px; display:block; text-align:center; padding:30px 0;}
 }
@@ -1339,8 +1424,8 @@
 
 	.gellary_wrapper img{width: 90%;}
 
-	.gellary_body_photo_block .gellary_body_photo_img{height: 260px; width: 100%;}
-	.gellary_body_photo_block .gellary_body_photo_img img{width: 100%; height: 100%;}
+
+
 	.gellary_body_video_block .gellary_body_video_content{height: 260px; width: 100%;}
 	.gellary_body_video_block .gellary_body_video_content iframe{width: 100%; height: 100%;}
 
@@ -1368,6 +1453,11 @@
 
 }
 
+@media screen and (max-width:500px) {
+.home_appoinment_block_form{ overflow:hidden!important; width:80%!important; margin:0 auto; padding-top:0!important;  }
+
+.career_body_wrapper2{ padding-left:2%; padding-right:2%;}
+}
 @media screen and (max-width:400px) {
 	/*-------------neuropsychological-------------------*/
 	.neuro_body_wrapper .neuro_body_wrapper_section h1{font-size: 18px; line-height: 24px;}
@@ -1568,7 +1658,7 @@
 @media screen and (max-width:500px) {
 
 /*----------------------------banner--------------------------------*/
-.banner_text_area h1{font-size: 32px; line-height: 20px;}
+.banner_text_area h1{font-size: 32px; line-height: 35px;}
 	.banner_text_area h2{line-height: 28px; font-size:18px; margin-top:10px;}
 	
 	.upcoming_event_wrapper .upcoming_event_wrapper_banner{padding-top:18%;}
@@ -1623,7 +1713,7 @@
 
 @media screen and (max-width:1400px) {
 
-.top_menu_block .top_menu_block_right .navbar-nav > li > a{padding: 10px 14px;}
+.top_menu_block .top_menu_block_right .navbar-nav > li > a{padding: 10px 12px;}
 }
 @media screen and (max-width:1360px) {
 
@@ -1634,20 +1724,181 @@
 .gellary_block{padding: 0px;}
 	.gellary_block .gellary_block_left img{width: 100%; display: block; margin: 0 auto; margin-bottom: 20px;}
 	
+	 .modal-popupcon label{ font-weight:normal; width:100%; display:block; text-align:left; padding-right:35px; float:none;}
+	  .modal-popupcon .poptextblock{ display:block; float:none; text-align:left; width:100%}
+	
 }	
 @media screen and (max-width:940px) {
 
-	
+
+.home_specialist_block .home_specialist_descblock{ height:auto;}
+
+.pearl_home_body_heading2{ text-align:center!important;  height:auto!important; padding-left:10px!important; padding-right:10px!important; }
+
+	.form_error2{ text-align:center!important;  height:auto!important;  padding-left:10px!important; padding-right:10px!important; }
 
 	#staffmodal .modal-dialog{width:90%; position:relative;}
 	#staffmodal .close{position:absolute; top:-40px; right:3px;}
 	.modal_body_left{float:none; margin:0 auto; margin-top:40px;}
-	.modal_body_right{float:none; width:100%; padding-top:20px; padding-bottom:10px; text-align:center;}
+	.modal_body_right{float:none; width:auto; padding-top:20px; padding-bottom:10px; text-align:center;}
 	.modal_body_right h2{text-align:center; background-position:center bottom;}
 	#staffmodal .modal-footer img{float:none; display:block; margin:0 auto; width:30%;}
 }
 @media screen and (max-width:500px) {
 .modal_body_left{width:60%;}
-
+.videogallerybody{ padding-bottom:20px; padding-top:40px;}
+.gellary_video_row {
+    float: none;
+    margin: 24px auto;
+    width: 260px;
+}
+.gellary_body_photo_block .gellary_body_photo_img { height:214px;
+}
 }
 /*----------------------------------end-staff-----------------------------------------------*/
+
+
+
+@media screen and (max-width:1680px) {
+.gellaryphotomain .glyphicon-chevron-right{ 
+    left: 1560px;}
+	
+	}
+	
+	
+	
+	@media screen and (max-width:1660px) {
+.gellaryphotomain .glyphicon-chevron-right{ 
+    left: 1540px;}
+	
+	}
+	
+	
+		@media screen and (max-width:1600px) {
+.gellaryphotomain .glyphicon-chevron-right{ 
+    left: 1460px;}
+	
+	}
+	
+	
+	@media screen and (max-width:1366px) {
+	gellaryphotomain .glyphicon-chevron-right{ 
+    left: 1240px;}
+	}
+	
+		@media screen and (max-width:1300px) {
+		
+		.sliderarrowdiv{ display:none;}
+		}
+		
+		
+		@media screen and (max-width:1199px) {	
+	.gellary_video_row {
+    float: none;
+    margin: 24px auto;
+    width: 260px;
+}
+.gellary_body_photo_block .gellary_body_photo_img { height:214px;
+}
+		.videotextcon{ text-align:center;}
+		
+		.videotextcon .h2devider{ margin:12px auto;}
+		}
+		
+		
+		
+		@media screen and (max-width:1366px) {
+		
+		.staff_body_wrapper_new{ width:1300px; margin:0 auto; padding-left:20px;}
+}
+
+
+		@media screen and (max-width:1300px) {
+		
+		.staff_body_wrapper_new{ width:1220px; margin:0 auto; padding-left:0;}
+}
+
+
+	@media screen and (max-width:1200px) {
+	
+		.staff_body_wrapper_new{ width:90%; margin:0 auto; padding-left:0;}
+		
+		 .staff_view1{ margin:0 auto; padding:0; width:100%;}
+		 
+		    .staff_view1 .staff_body1{ float:none!important; margin:0 auto!important; margin-top:12px;}
+			
+				.staff_view2{ width:580px; margin:0 auto;}	
+				
+					.staff_view2 .staff_body2{ width:280px;  margin:0 5px 10px 5px; float:left; position:relative; overflow:hidden;}
+					
+					.staff_view3{ width:100%; margin:0  auto;}
+
+.staff_view3 .staff_body3{ width:100%; margin-bottom:10px; position:relative;}
+
+.staff_view3 .staff_body3 .staff_body3_text h2 {
+ 
+    font-size: 25px;
+    line-height:26px;    padding: 2px 0;
+
+}
+	.staff_view3 .staff_body3 .staff_body3_text h3{ padding:22px;}
+	}
+	
+	
+		@media screen and (max-width:640px) {
+		
+		.gellaryphotomain{  padding:10px 0 2px 0; }
+		
+			.gellaryphotomain .col-lg-12{ padding:0;}
+		
+		.gellary_body_wrapper .gellary_photo_text_block{ padding:46px 0;}
+		
+	
+		 .staff_view1 .staffviewtopbg{ display:none}
+		 
+		 .staff_view1 .staff_body1{ width:308px; margin:0 auto;}	
+		
+		  .staff_view1 .staff_body1 .staff1img{ width:308px; float:none!important; margin:0 auto!important;}
+		  
+		   .staff_view1 .staff_body1 .staff1text .staffviewarrow{ display:none;}
+		   
+		    .staff_view1 .staff_body1 .staff1text{ width:308px; height:auto; float:none!important; margin:0 auto!important;}
+			
+			  .staff_view1 .staff_body1 .staff1text .textview{ position:inherit; width:100%; background:#c7c7c7; padding:10px; margin-bottom:20px; }	
+		
+		 .staff_view1 .staff_body1 .staff1text .textview h2{ margin:0 0 0px 0; padding:0px 0 0 0; }
+		 
+		     .staff_view1 .staff_body1{ float:none!important; margin:0 auto!important; margin-top:12px; height:auto;}
+		 
+		 .staff_view2{ width:280px; margin:0 auto;}
+		 			.staff_view2 .staff_body2{ width:280px;  margin:0 auto; margin-bottom:10px; float:none; position:relative; overflow:hidden;}
+					
+					.staff_view3 .staff_body3 .staff_body3_text{ width:100%; height:auto; position:inherit; left:0; top:0; background: #606060; padding:20px;}
+		}
+		
+		
+		
+		@media screen and (max-width:991px) {
+.pearl_home_body_heading{ font-size:35px!important;}
+
+.footer_top_section .foot_address_section .foot_address_section_leftimg{ display:none;}
+.footer_top_section .foot_address_section .foot_address_section_rightimg{ display:none;}
+
+.home_block1 .home_block1_section{ width:90%; margin:0 auto;}
+
+.container-fluid { width:100%; margin:0 auto; padding-left:0; padding-right:0;}
+
+.row { width:100%; margin:0 auto; padding-left:0; padding-right:0;}
+
+.home_block3 .home_block3_section .home_block3_section_content h1{ font-size: 26px;
+    line-height: 35px;}
+	
+	.home_specialist_block h1{ height:auto;}
+	
+		.footer_top_section .foot_address_section{width: 98%; margin: 0 auto; margin-top: 20px; float: none;}
+		
+		
+			.home_appoinment_block .home_appoinment_block_content .home_appoinment_block_form{float: none; margin: 15px auto;}
+			
+			.footer_top_section{ margin-top:25px;}
+}

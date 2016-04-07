@@ -3,6 +3,106 @@
  */
 
 $(function(){
+		   
+	//accordion click	   
+	
+	$(".faq_body_main_middle_block3:nth-child(odd)").css("background-color", "yellow");
+	
+	$('#accordion').find('a').addClass('collapsed');
+	
+	$('#accordion').find('a').eq(0).removeClass('collapsed');
+$('button.navbar-toggle').click(function(){
+
+$('div#myNavbar').toggleClass('collapse');
+$(this).attr('class','navbar-toggle ');
+$('nav').css('display','block');
+//$('div#myNavbar').toggleclass('collapse');
+});
+
+$('li.ssd').find('a').each(function(){
+if($(this).text()==' PATIENT PORTAL ') $(this).attr('target','_blank');
+
+console.log($(this).attr('href'));
+});
+
+if($('.portallink').length>0){
+console.log('in portal');
+$('body').hide();
+var win = window.location.href=('https://mycw12.eclinicalweb.com/portal526/jsp/100mp/login.jsp');
+  //win.focus();
+}
+
+//javascript code for event popup
+
+$('.upcoming_event_body_gellary_block').find('.download_link').click(function()
+{
+
+
+console.log($(this).parent().parent().prev().prev().find('img').attr('src'));
+$('#eventmodal').find('.upcoming_event_body_gellary_imgblock').find('img').attr('src',$(this).parent().parent().prev().prev().find('img').attr('src'));
+$('#eventmodal').find('h2.evdate').html($(this).parent().parent().prev().find('h3').html());
+$('#eventmodal').find('div.eventdesc').html($(this).parent().prev('h4').html());
+$('#eventmodal').find('h1.evname').html($(this).parent().prev('h4').prev('h2').html());
+$('#eventmodal').modal('show');
+
+}
+
+);
+
+
+
+//javascript code for faq scroll
+
+
+function get_hostname(url) {
+    var m = url.match(/^http:\/\/[^/]+/);
+    return m ? m[0] : null;
+}
+
+//if($(window).width>1024){
+
+console.log(get_hostname(window.location.href));
+
+        setTimeout(function(){
+
+
+
+            $(window).scroll(function(){
+
+                console.log($(document).scrollTop());
+                if($(document).scrollTop()>0){
+
+                    $('.faq_wrapper').css('background',' no-repeat top 0px center url( "'+get_hostname(window.location.href)+'/wp-content/themes/pearlhealth/images/faq_body_banner.png") ').css('background-attachment','fixed');
+                }
+                else  $('.faq_wrapper').css('background',' no-repeat top 60px center url( "'+get_hostname(window.location.href)+'/wp-content/themes/pearlhealth/images/faq_body_banner.png")').css('background-attachment','fixed');
+
+            });
+
+        },2000);
+
+    //}
+
+
+    
+
+    
+
+//javascript code for job popup
+
+$('.job_link').click(function(){
+    $('#jobmodal').modal('show');
+
+    $('#jobmodal').find('div.poptextblock').eq(0).html($(this).text());
+    $('#jobmodal').find('div.poptextblock').eq(1).html($(this).attr('job_description'));
+    $('#jobmodal').find('div.poptextblock').eq(2).html($(this).attr('job_requirement'));
+    $('#jobmodal').find('div.poptextblock').eq(3).find('span').eq(0).html($(this).attr('job_contact_person'));
+    $('#jobmodal').find('div.poptextblock').eq(3).find('span').eq(1).html($(this).attr('job_contact_no'));
+    $('#jobmodal').find('div.poptextblock').eq(3).find('span').eq(2).html($(this).attr('job_contact_email'));
+
+});
+
+
+
 
     //alert(4);
 
@@ -65,16 +165,27 @@ $(function(){
 
     });
 
-    $('.gellary_body_photo_videopopup').find('img').click(function(){
+    $('.gellary_body_photo_videopopup').find('.video_playbtn').click(function(){
 
 
         console.log('clicked on img');
 
-        $('.modal').find('.modal-body').html("<iframe height=360 width=640 style=max-width:100% src="+$(this).attr('videourl')+" frameborder=0 allowfullscreen></iframe>");
+        $('.modal').find('.modal-body').html("<iframe height=360 width=640 style=max-width:100% src="+$(this).prev().attr('videourl')+" frameborder=0 allowfullscreen></iframe>");
         $('#imggallery').modal('show');
 
 
     });
+
+
+
+    $('#imggallery').on('hidden.bs.modal', function () {
+        // do something…
+
+
+        $('.modal').find('.modal-body').empty();
+    });
+
+
 
 
 });

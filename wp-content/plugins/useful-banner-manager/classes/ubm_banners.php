@@ -7,7 +7,7 @@ class UBM_Banners {
         global $wpdb;
 
         //print_r($data);
-       // //exit;
+       //exit;
         //$banner_data = array(
         $banner_name       = $data['banner_name'];
         $banner_type       = $data['banner_type'];
@@ -20,8 +20,8 @@ class UBM_Banners {
         $link_rel          = $data['link_rel'];
         if($data['banner_width']>0 ||$data['banner_width']!='' )$banner_width      = $data['banner_width'];
         else $banner_width      = 0;
-        if($data['banner_height']>0)$banner_height     = $data['banner_height'];
-        else $data['banner_height']=0;
+        //if($data['banner_height']>0 ||$data['banner_height']!='')$banner_height     = $data['banner_height'];
+        $banner_height=$data['banner_height']=0;
         $added_date        = $data['added_date'];
         $active_until      = $data['active_until'];
         $banner_order      = $data['banner_order'];
@@ -31,9 +31,10 @@ class UBM_Banners {
         $banner_added_by   = $data['banner_added_by'];
         //);
 
-        print_r($data);
+        //print_r($data);
 
         //$x=$wpdb->insert( $wpdb->ubm_banners, $banner_data );
+
 
          $query = "INSERT INTO wp_useful_banner_manager_banners (banner_name, banner_type, banner_title,banner_title2,banner_desc,
 
@@ -67,7 +68,10 @@ VALUES ('$banner_name'   , '$banner_type'  ,    '$banner_title'  ,
 
 
         $c=$wpdb->query($query);
-        print_r($c);
+        /*print_r($c);
+        print_r($query);
+
+        exit;*/
 
 
 

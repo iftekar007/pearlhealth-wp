@@ -71,7 +71,7 @@
                             <li><a href="/affiliates/other-professionals">Affiliates</a> </li>
                             <li><a href="/planning-your-visit">Planning Your Visit</a> </li>
                             <li><a href="/news">News</a> </li>
-                            <li><a href="/upcoming-events">Community Events</a> </li>
+                            <li><a href="/upcoming-events-2">Community Events</a> </li>
                             <li><a href="https://mycw12.eclinicalweb.com/portal526/jsp/100mp/login.jsp">Patient's Portal</a> </li>
                         </ul>
                     </div>
