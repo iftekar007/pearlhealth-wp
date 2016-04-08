@@ -2,7 +2,7 @@
 /* CSS Document */
 
 @media screen and (max-width:1920px) {
-	.visit_wrapper .visit_body_block_top{padding-bottom: 108px;}
+	.visit_wrapper .visit_body_block_top{padding-bottom: 70px;}
 
 	.upcoming_event_wrapper .upcoming_event_wrapper_banner .upcoming_events_banner_cut2{width: 	49%; left: 51%;}
 	.upcoming_event_banner_bottom{position: absolute; bottom: -6px; left: 51%; background:#989999; width: 49%; height: 6px; border-left: 10px solid #fff; border-top: 6px solid transparent;}
@@ -833,7 +833,7 @@
 	.banner_text_block4 {position: absolute; top: 33%; left: 19%; width: 40%;}
 	.banner_text_area h1{font-size: 60px; line-height: 50px;}
 	.banner_text_area h2{line-height: 50px;}
-	.home_body_section{position: relative; top:-103px;}
+	.home_body_section{position: relative; top:0;}
 
 	/*------------gellary-----------*/
 
@@ -1775,16 +1775,18 @@
 	
 	
 		@media screen and (max-width:1600px) {
-.gellaryphotomain .glyphicon-chevron-right{ 
-    left: 1460px;}
+.gellaryphotomain .glyphicon-chevron-right{ left: 1460px;}
 	
 	}
 	
 	
 	@media screen and (max-width:1366px) {
-	gellaryphotomain .glyphicon-chevron-right{ 
-    left: 1240px;}
+	.gellaryphotomain .glyphicon-chevron-right{ 
+    left: 1256px;}
 	}
+	
+	
+	
 	
 		@media screen and (max-width:1300px) {
 		

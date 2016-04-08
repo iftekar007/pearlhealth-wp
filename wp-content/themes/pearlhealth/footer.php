@@ -82,18 +82,19 @@
                                 <a href="https://mobile.twitter.com/pearl_health"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon.png"></a>
                                 <a href="javascript:void(0);" class="update_text">Keep Updated</a>
                             </div>
+<br/><br/>
                             <div class="input_address_div">
-                                <div class="input-group">
+                                <!--<div class="input-group">
                                     <input type="text" class="form-control input_address_area" placeholder="Email Address">
                                     <span class="input-group-btn input_signup">
                                         <button class="btn btn-secondary" type="button">Sign up</button>
-                                    </span>
+                                    </span>-->
                                 </div>
                                 <!--<input type="text" class="input_address_area" placeholder="Email Address">
                                 <button type="submit" class="input_signup">Sign up</button>-->
                             </div>
                             <p>Patients will NOT be denied services based on inability to pay and discounted services are available based on family size and income.</p>
-                            <a href="javascript:void(0);">Discounted Fee Schedule</a>
+                            <a target="_blank" href="http://nhsc.hrsa.gov/downloads/discountfeeschedule.pdf">Discounted Fee Schedule</a>
                         </div>
                     </div>
                     <div class="clear"></div>

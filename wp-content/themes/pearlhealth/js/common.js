@@ -11,6 +11,8 @@ $(function(){
 	$('#accordion').find('a').addClass('collapsed');
 	
 	$('#accordion').find('a').eq(0).removeClass('collapsed');
+$('.wpcf7-not-valid-tip').css('display','block').css('clear','both');
+$('.wpcf7-mail-sent-ok').last().hide();
 $('button.navbar-toggle').click(function(){
 
 $('div#myNavbar').toggleClass('collapse');
@@ -49,7 +51,11 @@ $('#eventmodal').modal('show');
 
 );
 
+//dropdown function for top navigation
 
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
 
 //javascript code for faq scroll
 
@@ -153,25 +159,188 @@ $('.job_link').click(function(){
     $('#myCarousel_gellaryphoto').find('.item').eq(0).addClass('active');
     $('#myCarousel_gellaryvideo').find('.item').eq(0).addClass('active');
 
-
+    var thumbcount='';
+    var itemcount='';
+    var curpopup=0
     $('.gellary_body_photo_imgpopup').find('img').click(function(){
 
 
         console.log('clicked on img');
+        curpopup=1;
+        console.log($(this).parent().index());
+        thumbcount=$(this).parent().index();
+        itemcount=$(this).parent().parent().parent().parent().parent().parent().index();
+        console.log('item: '+itemcount);
 
         $('.modal').find('.modal-body').html('<img style=max-width:100% src ='+$(this).attr("src")+'>');
         $('#imggallery').modal('show');
 
 
     });
+    var cthumbcount=0; 
+    var citemcount=0;
+
+    $('.prevpopup').click(function()
+    {
+        //$(this).parent().prev().find('img').click();
+
+        console.log('prev- start ');
+        console.log('t'+thumbcount);
+        console.log('i'+itemcount);
+
+
+
+        /*if (thumbcount==$('#myCarousel_gellaryphoto').find('.item').eq(itemcount).find('.gellary_body_photo_imgpopup').last().index()) {
+
+            $('#myCarousel_gellaryphoto').find('.item').eq(itemcount+1).find('.gellary_body_photo_imgpopup').eq(0).find('img').click();
+            cthumbcount=0;
+            citemcount=itemcount+1;
+            console.log('in last ');
+
+            itemcount=citemcount;
+            thumbcount=cthumbcount;
+
+            console.log('t'+thumbcount);
+            console.log('i'+itemcount);
+            console.log('imgprev');
+            return;
+        }*/
+
+        if(curpopup==1) varpopd='#myCarousel_gellaryphoto';
+        if(curpopup==2) varpopd='#myCarousel_gellaryvideo';
+
+
+        if (thumbcount > 0 ) {
+            $(varpopd).find('.item').eq(itemcount).find('.gellary_body_photo_img').eq(thumbcount-1).find('img').last().click();
+
+
+            console.log('t'+thumbcount);
+            console.log('i'+itemcount);
+            console.log('imgprev');
+            return;
+        }
+
+        if (thumbcount==0) {
+
+            if(itemcount>=1) console.log('gt 1');
+            else console.log($(varpopd).find('.item').last().find('.gellary_body_photo_img').last().html());
+            if(itemcount>=1)$(varpopd).find('.item').eq(itemcount-1).find('.gellary_body_photo_img').last().find('img').last().click();
+            else $(varpopd).find('.item').last().find('.gellary_body_photo_img').last().find('img').last().click();
+            if(itemcount>=1) cthumbcount=$(varpopd).find('.item').eq(itemcount-1).find('.gellary_body_photo_img').last().index();
+            else cthumbcount=$(varpopd).find('.item').last().find('.gellary_body_photo_img').last().index();
+            if(itemcount>1)citemcount=itemcount-1;
+            else citemcount=$(varpopd).find('.item').length;
+            console.log('in ==0');
+
+           /* itemcount=citemcount;
+            thumbcount=cthumbcount;*/
+
+            console.log('t'+thumbcount);
+            console.log('i'+itemcount);
+            console.log('imgprev');
+            return;
+        }
+
+
+
+
+
+
+    });
+
+
+    $('.nextpopup').click(function()
+    {
+
+        if(curpopup==1) varpopd='#myCarousel_gellaryphoto';
+        if(curpopup==2) varpopd='#myCarousel_gellaryvideo';
+        //$(this).parent().prev().find('img').click();
+
+        console.log('prev- start ');
+        console.log('t'+thumbcount);
+        console.log('i'+itemcount);
+
+
+
+        /*if (thumbcount==$('#myCarousel_gellaryphoto').find('.item').eq(itemcount).find('.gellary_body_photo_imgpopup').last().index()) {
+
+         $('#myCarousel_gellaryphoto').find('.item').eq(itemcount+1).find('.gellary_body_photo_imgpopup').eq(0).find('img').click();
+         cthumbcount=0;
+         citemcount=itemcount+1;
+         console.log('in last ');
+
+         itemcount=citemcount;
+         thumbcount=cthumbcount;
+
+         console.log('t'+thumbcount);
+         console.log('i'+itemcount);
+         console.log('imgprev');
+         return;
+         }*/
+
+
+        if (thumbcount < $(varpopd).find('.item').eq(itemcount).find('.gellary_body_photo_img').last().index() ) {
+            $(varpopd).find('.item').eq(itemcount).find('.gellary_body_photo_img').eq(thumbcount+1).find('img').last().click();
+
+
+            console.log('t'+thumbcount);
+            console.log('i'+itemcount);
+            console.log('imgprev');
+
+            return;
+        }
+
+        if (thumbcount ==  $(varpopd).find('.item').eq(itemcount).find('.gellary_body_photo_img').last().index()) {
+
+            console.log( $(varpopd).find('.item').length);
+            if(itemcount>=1) console.log('gt 1');
+            else console.log($(varpopd).find('.item').last().find('.gellary_body_photo_img').last().html());
+            if(itemcount== $(varpopd).find('.item').length-1){
+                console.log('last img');
+                $(varpopd).find('.item').eq(0).find('.gellary_body_photo_img').eq(0).find('img').last().click();
+            }
+            else $(varpopd).find('.item').eq(itemcount+1).find('.gellary_body_photo_img').eq(0).find('img').last().click();
+           /* if(itemcount>=1) cthumbcount=$('#myCarousel_gellaryphoto').find('.item').eq(itemcount-1).find('.gellary_body_photo_imgpopup').last().index();
+            else cthumbcount=$('#myCarousel_gellaryphoto').find('.item').last().find('.gellary_body_photo_imgpopup').last().index();
+            if(itemcount>1)citemcount=itemcount-1;
+            else citemcount=$('#myCarousel_gellaryphoto').find('.item').length;*/
+            console.log('in ==0');
+
+            /* itemcount=citemcount;
+             thumbcount=cthumbcount;*/
+
+            console.log('t'+thumbcount);
+            console.log('i'+itemcount);
+            console.log('imgprev--- next ');
+            return;
+        }
+
+
+
+
+
+
+    });
+
 
     $('.gellary_body_photo_videopopup').find('.video_playbtn').click(function(){
 
 
-        console.log('clicked on img');
+        console.log('clicked on video');
 
-        $('.modal').find('.modal-body').html("<iframe height=360 width=640 style=max-width:100% src="+$(this).prev().attr('videourl')+" frameborder=0 allowfullscreen></iframe>");
+        $('.modal').find('.modal-body').html("<iframe height=360 width=640 style=max-width:100% src="+$(this).prev().attr('videourl')+" frameborder=0 allowfullscreen  autoplay=1></iframe>");
+
+
         $('#imggallery').modal('show');
+
+        thumbcount=$(this).parent().parent().index();
+        itemcount=$(this).attr('imgc');
+        var itemcountv=itemcount%3;
+        itemcount=(itemcount-itemcountv)/3;
+        console.log('tt---'+thumbcount);
+        console.log('it---'+itemcount);
+        console.log('html---'+$(this).parent().parent().parent().parent().parent().parent().parent().parent().index($(this).parent().parent().parent().parent().parent().parent().parent()));
+        curpopup=2;
 
 
     });
