@@ -75,6 +75,7 @@
                                         $pages = get_pages($args);
 
                                         if ($pages) {
+                                            $ic=0;
                                             foreach ($pages as $page) :
 
 
@@ -96,7 +97,7 @@
                                                  if($page->ID != 6)
                                                  {
                                                      if(count($pages2)>0) {
-                                                         echo ' <li class="ssd dropdown" ><a data-toggle="dropdown" class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+                                                         echo ' <li class="ssd dropdown lidiv'.$ic.' " ><a data-toggle="dropdown" class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
 
                                                          echo "<ul class=dropdown-menu>";
 
@@ -104,20 +105,22 @@
                                                          foreach($pages2 as $childpage){
 
 
-                                                             echo ' <li class="ln"><a href="' . get_page_link($childpage->ID) . '"> ' . $childpage->post_title . ' </a></li>';
+                                                             echo ' <li class="ln lidiv'.$ic.' "><a href="' . get_page_link($childpage->ID) . '"> ' . $childpage->post_title . ' </a></li>';
 
                                                          }
                                                          echo "</ul>";
 
                                                      }else{
-                                                         echo ' <li class="ssd " ><a  class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+                                                         echo ' <li class="ssd lidiv'.$ic.' " ><a  class="dropdown-toggle" href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
                                                      }
                                                  }else{
-                                                     echo ' <li class="ssd " ><a   href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
+                                                     echo ' <li class="ssd lidiv'.$ic.' " ><a   href="' . get_page_link($page->ID) . '"> ' . $page->post_title . ' </a>';
                                                  }
 
 
                                             echo "</li>";
+
+                                            $ic++;
 
 
                                             endforeach;

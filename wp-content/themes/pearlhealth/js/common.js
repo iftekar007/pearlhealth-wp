@@ -11,7 +11,7 @@ $(function(){
 	$('#accordion').find('a').addClass('collapsed');
 	
 	$('#accordion').find('a').eq(0).removeClass('collapsed');
-$('.wpcf7-not-valid-tip').css('display','block').css('clear','both');
+//$('.wpcf7-not-valid-tip').css('display','block').css('clear','both');
 $('.wpcf7-mail-sent-ok').last().hide();
 $('button.navbar-toggle').click(function(){
 
@@ -50,6 +50,29 @@ $('#eventmodal').modal('show');
 }
 
 );
+
+//javascript code for intake packet form popup
+
+$('.intake_form').click(function()
+{
+    console.log('popup');
+    $('#intakemodal').modal('show');
+
+
+
+
+}
+    );
+
+
+
+
+
+
+
+
+
+
 
 //dropdown function for top navigation
 
