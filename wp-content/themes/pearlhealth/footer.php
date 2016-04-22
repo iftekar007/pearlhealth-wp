@@ -110,3 +110,24 @@
         </div>
     </div>
 </div>
+
+
+
+<!--------  --------->
+
+<div id="thankyou_popup" class="modal fade">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-body">
+
+<button class="close" type="button" data-dismiss="modal"><img src="http://pearlhealthwp.spectrumiq.com/wp-content/themes/pearlhealth/images/popup_staff_closebtn.png" alt="" /></button>
+<div class="thankyoutextcon">Thank you for contacting Pearl Health. We will be in contact with you shortly.</div>
+
+<div class="clear"></div>
+</div>
+<div class="modal-footer"><a><img src="http://pearlhealthwp.spectrumiq.com/wp-content/themes/pearlhealth/images/pearl_logo.png" alt="" /> </a></div>
+</div>
+</div>
+</div>

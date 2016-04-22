@@ -7,7 +7,7 @@
  */
 
 
-?>
+?> 
 
 
 <!DOCTYPE html>
@@ -177,6 +177,7 @@
 
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
 
 
