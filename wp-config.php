@@ -22,16 +22,16 @@ error_reporting(E_ALL);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'spectrum_pearlwp');
+define('DB_NAME', 'wppearl');
 
 /** MySQL database username */
-define('DB_USER', 'spectrum_pearlwp');
+define('DB_USER', 'wppearl');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'P@ss12345');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'wppearl.db.10014679.hostedresource.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

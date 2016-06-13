@@ -128,7 +128,7 @@ $(" label:contains('Eating Disorder Therapy')").html(function(_, html) {
 	
 	
 	
-	$(".faq_body_main_middle_block3:nth-child(odd)").css("background-color", "yellow");
+	//$(".faq_body_main_middle_block3:nth-child(odd)").css("background-color", "yellow");
 	
 	$('#accordion').find('a').addClass('collapsed');
 	
@@ -211,8 +211,10 @@ $('.thankyoubtn').click(function()
 
 //dropdown function for top navigation
 
-$('.dropdown').hover(function(){ 
-  $('.dropdown-toggle', this).trigger('click'); 
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
 //javascript code for faq scroll
